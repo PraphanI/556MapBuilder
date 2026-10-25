@@ -86,7 +86,7 @@ header{flex-wrap:wrap}
 .btnlink{display:inline-flex;align-items:center;padding:6px 12px;border-radius:6px;background:#FF5E54;color:#F2F3F6;font:inherit;font-weight:600;text-decoration:none;white-space:nowrap}
 .btnlink:hover{filter:brightness(1.08)}
 
-/* ---- feedback button (Creamy Milk: the hex is the campaign's working value, confirm it) and form */
+/* ---- feedback button (Creamy Milk #FFF3D9, confirmed by the user) and form */
 :root{--cream:#FFF3D9}
 .btnlink.cream{background:var(--cream);color:#282828;border:0;cursor:pointer}
 #dFeed{width:min(560px,94vw)}#dFeed label{display:flex;flex-direction:column;gap:3px;margin:8px 0;font-size:13px}
