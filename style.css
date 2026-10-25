@@ -81,3 +81,7 @@ header{flex-wrap:wrap}
 #status{top:auto;bottom:8px;right:10px}#hint{max-width:calc(100% - 230px)}
 
 #palNote{padding:6px 12px;font-size:12px;font-style:italic;border-bottom:1px solid var(--line)}#palNote[hidden]{display:none}
+
+/* Kickstarter link: Watermelon from the campaign palette, Ghost Grey text */
+.btnlink{display:inline-flex;align-items:center;padding:6px 12px;border-radius:6px;background:#FF5E54;color:#F2F3F6;font:inherit;font-weight:600;text-decoration:none;white-space:nowrap}
+.btnlink:hover{filter:brightness(1.08)}
