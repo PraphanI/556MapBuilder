@@ -15,6 +15,7 @@
   <button id="bView" class="primary" title="Compose the map as a picture from the pre-made pieces: instant, no render">Generate view…</button>
   <button id="bRender" title="A full Blender render of this map (slower, on this PC)">Render…</button>
   <a id="bBack" class="btnlink" href="https://www.kickstarter.com/projects/1077604478/urban-operations-eastern-european-town-and-modular-roads" target="_blank" rel="noopener" title="Open the Kickstarter campaign in a new tab">Back this project ↗</a>
+  <button id="bFeed" class="btnlink cream" type="button" hidden title="Report a bug or ask for a feature">Feedback</button>
   <div class="menu"><button class="mbtn" data-menu="mSet" title="Settings">⚙</button>
     <div class="mlist right" id="mSet" hidden><button id="bTheme">Light look</button><button id="bRefresh" title="Re-read the atlas and the catalogue cards for new tiles or models">Refresh library…</button></div></div>
 </header>
@@ -69,5 +70,39 @@
   <select id="vLong"><option>1920</option><option selected>3840</option><option>5760</option></select>
   <button id="vSave" class="primary">Save image</button><button id="vClose">Close</button></div>
   <canvas id="vcv"></canvas></dialog>
+<dialog id="dFeed"><h3>Feedback</h3>
+  <form name="feedback" method="POST" action="/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" id="fbForm">
+    <input type="hidden" name="form-name" value="feedback">
+    <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+    <div class="fbtype">
+      <label><input type="radio" name="type" value="Bug" checked> Something's wrong</label>
+      <label><input type="radio" name="type" value="Feature request"> I wish it could…</label>
+      <label><input type="radio" name="type" value="Other"> Question or praise</label>
+    </div>
+    <div class="fbsec" data-t="Bug">
+      <label>What happened?<textarea name="bug_what" rows="3"></textarea></label>
+      <label>What did you expect?<textarea name="bug_expected" rows="2"></textarea></label>
+      <div class="two"><label>What were you doing?<select name="bug_area"><option value="">Choose…</option><option>Placing tiles</option><option>Joins and warnings</option><option>Saving or opening a map</option><option>Generate view</option><option>Parts to print</option><option>Scale or map size</option><option>Something else</option></select></label>
+      <label>How bad is it?<select name="bug_severity"><option value="">Choose…</option><option>I can't continue</option><option>Annoying</option><option>Small glitch</option></select></label></div>
+    </div>
+    <div class="fbsec" data-t="Feature request" hidden>
+      <label>What do you wish it could do?<textarea name="feat_wish" rows="3"></textarea></label>
+      <label>What were you trying to do when you wished for it?<textarea name="feat_goal" rows="2"></textarea></label>
+      <div class="two"><label>How much would it matter?<select name="feat_importance"><option value="">Choose…</option><option>Nice to have</option><option>I'd use it every time</option></select></label>
+      <label>What do you do today instead?<input name="feat_workaround"></label></div>
+    </div>
+    <div class="fbsec" data-t="Other" hidden>
+      <label>Tell us<textarea name="other_text" rows="4"></textarea></label>
+    </div>
+    <div class="two"><label>How did you hear about the project?<select name="heard_from" id="fbHeard"><option value="">Choose…</option><option>556 Studio Facebook page</option><option>A Facebook group</option><option>Reddit</option><option>Kickstarter</option><option>A friend</option><option>Other</option></select></label>
+    <label id="fbHeardOther" hidden>Where?<input name="heard_other"></label></div>
+    <div class="two"><label>Email (optional, only if you want a reply)<input type="email" name="email" autocomplete="email"></label>
+    <label>Screenshot (optional)<input type="file" name="screenshot" accept="image/*"></label></div>
+    <label class="chk"><input type="checkbox" id="fbAttach" checked> Attach my current map, so we can see what you built</label>
+    <textarea name="map" id="fbMap" hidden></textarea><textarea name="context" id="fbCtx" hidden></textarea>
+    <p class="mut">We read every one, but can't reply to all of them.</p>
+    <p id="fbMsg" class="mut"></p>
+    <div class="fbbtn"><button type="button" id="fbCancel">Close</button><button type="submit" id="fbGo" class="primary">Send</button></div>
+  </form></dialog>
 <div id="job" hidden><b id="jTitle">Rendering</b><div class="bar"><i id="jBar"></i></div><div id="jText" class="mut"></div><div id="jBtns"></div></div>
-<script>window.WEB = true;</script><script src="app.js"></script><script src="view.js"></script><script src="parts.js"></script></body></html>
+<script>window.WEB = true;</script><script src="app.js"></script><script src="view.js"></script><script src="parts.js"></script><script src="feedback.js"></script></body></html>

@@ -40,7 +40,7 @@ async function init() {
   await loadLib();
   buildPalette();
   const qp = new URLSearchParams(location.search).get("open");              // ?open=<layout path> opens that layout instead of the saved draft
-  if (WEB) { $("#bRender").hidden = true; $("#bRefresh").hidden = true; }
+  if (WEB) { $("#bRender").hidden = true; $("#bRefresh").hidden = true; $("#bFeed").hidden = false; }
   if (qp && !WEB) { try { const o = await (await fetch("/api/open?path=" + encodeURIComponent(qp))).json(); if (!o.error) { load(o, qp); fit(); resize(); return; } } catch (e) {} }
   try { const s = localStorage.getItem("mb_draft"); if (s) { const o = JSON.parse(s); const wasDirty = !!o.dirty; load(o, o.filePath || null); dirty = wasDirty; fileLabel(); } } catch (e) {}
   fit(); resize();
