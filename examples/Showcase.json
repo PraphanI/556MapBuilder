@@ -1,0 +1,541 @@
+{
+ "name": "Showcase",
+ "notes": "",
+ "items": [
+  {
+   "uid": 1,
+   "id": "cross",
+   "kind": "tile",
+   "sku": "Crossroads",
+   "x": 160,
+   "y": 240,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 2,
+   "id": "shiftL",
+   "kind": "tile",
+   "sku": "ShiftLeft",
+   "x": 160,
+   "y": 400,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 3,
+   "id": "offlong",
+   "kind": "tile",
+   "sku": "OffsetLongStraight",
+   "x": 160,
+   "y": 560,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 5,
+   "id": "offcross",
+   "kind": "tile",
+   "sku": "OffsetCrossroads",
+   "x": 160,
+   "y": 720,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 7,
+   "id": "medfstart",
+   "kind": "tile",
+   "sku": "TransitionMedianFilledStart",
+   "x": 280,
+   "y": 720,
+   "rot": 270,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 8,
+   "id": "medfshort",
+   "kind": "tile",
+   "sku": "MedianFilledStraight",
+   "x": 360,
+   "y": 720,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 9,
+   "id": "medfdrain",
+   "kind": "tile",
+   "sku": "MedianFilledStraightStormDrain",
+   "x": 440,
+   "y": 720,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 10,
+   "id": "medfshort",
+   "kind": "tile",
+   "sku": "MedianFilledStraight",
+   "x": 520,
+   "y": 720,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 11,
+   "id": "medfstart",
+   "kind": "tile",
+   "sku": "TransitionMedianFilledStart",
+   "x": 600,
+   "y": 720,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 12,
+   "id": "rbtee",
+   "kind": "tile",
+   "sku": "RoundaboutTeeJunction",
+   "x": 720,
+   "y": 720,
+   "rot": 90,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 14,
+   "id": "short_mh",
+   "kind": "tile",
+   "sku": "ShortStraight_Manhole",
+   "x": 720,
+   "y": 360,
+   "rot": 0,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 16,
+   "id": "short_entry",
+   "kind": "tile",
+   "sku": "TransitionStreetToAlley",
+   "x": 720,
+   "y": 440,
+   "rot": 180,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 17,
+   "id": "alley",
+   "kind": "tile",
+   "sku": "AlleyStraight",
+   "x": 600,
+   "y": 440,
+   "rot": 90,
+   "w": 80,
+   "l": 80
+  },
+  {
+   "uid": 19,
+   "id": "alley_mh",
+   "kind": "tile",
+   "sku": "AlleyStraight_Manhole",
+   "x": 520,
+   "y": 440,
+   "rot": 90,
+   "w": 80,
+   "l": 80
+  },
+  {
+   "uid": 20,
+   "id": "alleydead",
+   "kind": "tile",
+   "sku": "AlleyDeadEnd",
+   "x": 440,
+   "y": 440,
+   "rot": 90,
+   "w": 80,
+   "l": 80
+  },
+  {
+   "uid": 21,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 320,
+   "y": 560,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 22,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 480,
+   "y": 560,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 23,
+   "id": "plain_160x80",
+   "kind": "tile",
+   "sku": "PlainTile_160x80",
+   "x": 600,
+   "y": 560,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 24,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 320,
+   "y": 400,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 25,
+   "id": "plain_160x80",
+   "kind": "tile",
+   "sku": "PlainTile_160x80",
+   "x": 480,
+   "y": 360,
+   "rot": 0,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 26,
+   "id": "plain_80x80",
+   "kind": "tile",
+   "sku": "PlainTile_80x80",
+   "x": 600,
+   "y": 360,
+   "rot": 0,
+   "w": 80,
+   "l": 80
+  },
+  {
+   "uid": 27,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 320,
+   "y": 880,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 28,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 480,
+   "y": 880,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 29,
+   "id": "plain_160x80",
+   "kind": "tile",
+   "sku": "PlainTile_160x80",
+   "x": 600,
+   "y": 880,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 30,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 720,
+   "y": 880,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 31,
+   "id": "diagR",
+   "kind": "tile",
+   "sku": "DiagonalRight",
+   "x": 160,
+   "y": 880,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 32,
+   "id": "curve",
+   "kind": "tile",
+   "sku": "Curve",
+   "x": 880,
+   "y": 720,
+   "rot": 270,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 34,
+   "id": "dead",
+   "kind": "tile",
+   "sku": "DeadEnd",
+   "x": 880,
+   "y": 920,
+   "rot": 0,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 35,
+   "id": "short_mh",
+   "kind": "tile",
+   "sku": "ShortStraight_Manhole",
+   "x": 880,
+   "y": 840,
+   "rot": 0,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 36,
+   "id": "tee",
+   "kind": "tile",
+   "sku": "TeeJunction",
+   "x": 720,
+   "y": 240,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 37,
+   "id": "long",
+   "kind": "tile",
+   "sku": "LongStraight",
+   "x": 720,
+   "y": 560,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 38,
+   "id": "medfstart",
+   "kind": "tile",
+   "sku": "TransitionMedianFilledStart",
+   "x": 280,
+   "y": 240,
+   "rot": 270,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 39,
+   "id": "medfstart",
+   "kind": "tile",
+   "sku": "TransitionMedianFilledStart",
+   "x": 600,
+   "y": 240,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 40,
+   "id": "medfdrain",
+   "kind": "tile",
+   "sku": "MedianFilledStraightStormDrain",
+   "x": 360,
+   "y": 240,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 41,
+   "id": "medfshort",
+   "kind": "tile",
+   "sku": "MedianFilledStraight",
+   "x": 440,
+   "y": 240,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 42,
+   "id": "medfshort",
+   "kind": "tile",
+   "sku": "MedianFilledStraight",
+   "x": 520,
+   "y": 240,
+   "rot": 90,
+   "w": 160,
+   "l": 80
+  },
+  {
+   "uid": 43,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 880,
+   "y": 560,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 44,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 880,
+   "y": 400,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 45,
+   "id": "plain_160x160",
+   "kind": "tile",
+   "sku": "PlainTile_160x160",
+   "x": 880,
+   "y": 240,
+   "rot": 0,
+   "w": 160,
+   "l": 160
+  },
+  {
+   "uid": 46,
+   "id": "obj_001",
+   "x": 320,
+   "y": 480,
+   "rot": 0
+  },
+  {
+   "uid": 47,
+   "id": "obj_002",
+   "x": 480,
+   "y": 560,
+   "rot": 0
+  },
+  {
+   "uid": 48,
+   "id": "obj_007",
+   "x": 880,
+   "y": 400,
+   "rot": 90
+  },
+  {
+   "uid": 49,
+   "id": "obj_011",
+   "x": 880,
+   "y": 560,
+   "rot": 0
+  },
+  {
+   "uid": 50,
+   "id": "obj_009",
+   "x": 850,
+   "y": 230,
+   "rot": 0
+  },
+  {
+   "uid": 51,
+   "id": "obj_008",
+   "x": 400,
+   "y": 880,
+   "rot": 0
+  },
+  {
+   "uid": 52,
+   "id": "prop_RoadsideSkip",
+   "x": 720,
+   "y": 880,
+   "rot": 0
+  },
+  {
+   "uid": 53,
+   "id": "prop_UtilityCabinetB",
+   "x": 920,
+   "y": 290,
+   "rot": 0
+  },
+  {
+   "uid": 54,
+   "id": "prop_PipeStack",
+   "x": 320,
+   "y": 610,
+   "rot": 0
+  },
+  {
+   "uid": 55,
+   "id": "prop_WheelieBin",
+   "x": 380,
+   "y": 610,
+   "rot": 0
+  },
+  {
+   "uid": 56,
+   "id": "prop_CommunalBin",
+   "x": 270,
+   "y": 610,
+   "rot": 0
+  },
+  {
+   "uid": 57,
+   "id": "prop_UtilityCabinetA",
+   "x": 480,
+   "y": 360,
+   "rot": 0
+  },
+  {
+   "uid": 58,
+   "id": "prop_RubbishBin",
+   "x": 440,
+   "y": 360,
+   "rot": 0
+  },
+  {
+   "uid": 59,
+   "id": "prop_ClayBrickStack",
+   "x": 600,
+   "y": 900,
+   "rot": 90
+  },
+  {
+   "uid": 60,
+   "id": "prop_MediumCrate",
+   "x": 600,
+   "y": 850,
+   "rot": 0
+  }
+ ],
+ "render": {}
+}

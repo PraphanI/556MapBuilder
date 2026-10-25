@@ -1,0 +1,6847 @@
+{
+"unit": "mm at 1:56",
+"tiles": [
+{
+"id": "short",
+"kind": "tile",
+"sku": "ShortStraight",
+"label": "Short straight",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/short_plan.png",
+"img": "img/tiles/rendered/short.webp",
+"pictured": true
+},
+{
+"id": "long",
+"kind": "tile",
+"sku": "LongStraight",
+"label": "Long straight",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+160.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/long_plan.png",
+"img": "img/tiles/rendered/long.webp",
+"pictured": true
+},
+{
+"id": "tee",
+"kind": "tile",
+"sku": "TeeJunction",
+"label": "T-junction",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/tee_plan.png",
+"img": "img/tiles/rendered/tee.webp",
+"pictured": true
+},
+{
+"id": "cross",
+"kind": "tile",
+"sku": "Crossroads",
+"label": "Crossroads",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+]
+},
+"plan": "img/tiles/cross_plan.png",
+"img": "img/tiles/rendered/cross.webp",
+"pictured": true
+},
+{
+"id": "dead",
+"kind": "tile",
+"sku": "DeadEnd",
+"label": "Dead end",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/dead_plan.png",
+"img": "img/tiles/rendered/dead.webp",
+"pictured": true
+},
+{
+"id": "curve",
+"kind": "tile",
+"sku": "Curve",
+"label": "90\u00b0 curve",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+3.0
+],
+[
+"kerb",
+11.0
+],
+[
+"plain",
+86.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+27.0
+]
+],
+"X0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+28.0
+]
+],
+"X1": [
+[
+"path",
+33.0
+],
+[
+"kerb",
+11.0
+],
+[
+"plain",
+116.0
+]
+]
+},
+"plan": "img/tiles/curve_plan.png",
+"img": "img/tiles/rendered/curve.webp",
+"pictured": true
+},
+{
+"id": "offshort",
+"kind": "tile",
+"sku": "OffsetShortStraight",
+"label": "Offset short straight",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/offshort_plan.png",
+"img": "img/tiles/rendered/offshort.webp",
+"pictured": true
+},
+{
+"id": "offlong",
+"kind": "tile",
+"sku": "OffsetLongStraight",
+"label": "Offset long straight",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+160.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/offlong_plan.png",
+"img": "img/tiles/rendered/offlong.webp",
+"pictured": true
+},
+{
+"id": "shiftL",
+"kind": "tile",
+"sku": "ShiftLeft",
+"label": "Lane shift, left",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+28.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"path",
+120.0
+],
+[
+"kerb",
+40.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/shiftL_plan.png",
+"img": "img/tiles/rendered/shiftL.webp",
+"pictured": true
+},
+{
+"id": "shiftR",
+"kind": "tile",
+"sku": "ShiftRight",
+"label": "Lane shift, right",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+28.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+160.0
+]
+],
+"X1": [
+[
+"path",
+120.0
+],
+[
+"kerb",
+40.0
+]
+]
+},
+"plan": "img/tiles/shiftR_plan.png",
+"img": "img/tiles/rendered/shiftR.webp",
+"pictured": true
+},
+{
+"id": "diagR",
+"kind": "tile",
+"sku": "DiagonalRight",
+"label": "Diagonal, right",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"kerb",
+34.0
+],
+[
+"path",
+126.0
+]
+],
+"X1": [
+[
+"path",
+126.0
+],
+[
+"kerb",
+34.0
+]
+]
+},
+"plan": "img/tiles/diagR_plan.png",
+"img": "img/tiles/rendered/diagR.webp",
+"pictured": true
+},
+{
+"id": "diagL",
+"kind": "tile",
+"sku": "DiagonalLeft",
+"label": "Diagonal, left",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"path",
+126.0
+],
+[
+"kerb",
+34.0
+]
+],
+"X1": [
+[
+"kerb",
+34.0
+],
+[
+"path",
+126.0
+]
+]
+},
+"plan": "img/tiles/diagL_plan.png",
+"img": "img/tiles/rendered/diagL.webp",
+"pictured": true
+},
+{
+"id": "offcurve",
+"kind": "tile",
+"sku": "OffsetCurve",
+"label": "Offset curve",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"kerb",
+44.0
+],
+[
+"plain",
+11.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+99.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X1": [
+[
+"kerb",
+44.0
+],
+[
+"plain",
+116.0
+]
+]
+},
+"plan": "img/tiles/offcurve_plan.png",
+"img": "img/tiles/rendered/offcurve.webp",
+"pictured": true
+},
+{
+"id": "onelane",
+"kind": "tile",
+"sku": "OneLaneStraight",
+"label": "Straight",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/onelane_plan.png",
+"img": "img/tiles/rendered/onelane.webp",
+"pictured": true
+},
+{
+"id": "olcurve",
+"kind": "tile",
+"sku": "OneLaneCurve",
+"label": "90\u00b0 curve",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+5.0
+],
+[
+"kerb",
+8.0
+],
+[
+"plain",
+31.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+15.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+23.0
+],
+[
+"kerb",
+8.0
+],
+[
+"plain",
+49.0
+]
+]
+},
+"plan": "img/tiles/olcurve_plan.png",
+"img": "img/tiles/rendered/olcurve.webp",
+"pictured": true
+},
+{
+"id": "mergeAL",
+"kind": "tile",
+"sku": "TransitionMergeLeft",
+"label": "Merge, left",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+28.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+16.0
+],
+[
+"plain",
+78.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+17.0
+],
+[
+"plain",
+63.0
+]
+]
+},
+"plan": "img/tiles/mergeAL_plan.png",
+"img": "img/tiles/rendered/mergeAL.webp",
+"pictured": true
+},
+{
+"id": "mergeAR",
+"kind": "tile",
+"sku": "TransitionMergeRight",
+"label": "Merge, right",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+28.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"plain",
+78.0
+],
+[
+"path",
+16.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+17.0
+],
+[
+"plain",
+63.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/mergeAR_plan.png",
+"img": "img/tiles/rendered/mergeAR.webp",
+"pictured": true
+},
+{
+"id": "mergeBL",
+"kind": "tile",
+"sku": "TransitionOffsetMergeLeft",
+"label": "Offset merge, left",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+46.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+16.0
+],
+[
+"plain",
+79.0
+]
+],
+"X0": [
+[
+"kerb",
+33.0
+],
+[
+"path",
+47.0
+]
+],
+"X1": [
+[
+"path",
+20.0
+],
+[
+"plain",
+60.0
+]
+]
+},
+"plan": "img/tiles/mergeBL_plan.png",
+"img": "img/tiles/rendered/mergeBL.webp",
+"pictured": true
+},
+{
+"id": "mergeBR",
+"kind": "tile",
+"sku": "TransitionOffsetMergeRight",
+"label": "Offset merge, right",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"plain",
+79.0
+],
+[
+"path",
+16.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+46.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+20.0
+],
+[
+"plain",
+60.0
+]
+],
+"X1": [
+[
+"kerb",
+33.0
+],
+[
+"path",
+47.0
+]
+]
+},
+"plan": "img/tiles/mergeBR_plan.png",
+"img": "img/tiles/rendered/mergeBR.webp",
+"pictured": true
+},
+{
+"id": "alley",
+"kind": "tile",
+"sku": "AlleyStraight",
+"label": "Straight",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X0": [
+[
+"plain",
+80.0
+]
+],
+"X1": [
+[
+"plain",
+80.0
+]
+]
+},
+"plan": "img/tiles/alley_plan.png",
+"img": "img/tiles/rendered/alley.webp",
+"pictured": true
+},
+{
+"id": "short_mh",
+"kind": "tile",
+"sku": "ShortStraight_Manhole",
+"label": "Short straight, manhole",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/short_mh_plan.png",
+"img": "img/tiles/rendered/short_mh.webp",
+"pictured": true
+},
+{
+"id": "short_entry",
+"kind": "tile",
+"sku": "TransitionStreetToAlley",
+"label": "Street to alley",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+]
+},
+"plan": "img/tiles/short_entry_plan.png",
+"img": "img/tiles/rendered/short_entry.webp",
+"pictured": true
+},
+{
+"id": "onelane_mh",
+"kind": "tile",
+"sku": "OneLaneStraight_Manhole",
+"label": "Straight, manhole",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/onelane_mh_plan.png",
+"img": "img/tiles/rendered/onelane_mh.webp",
+"pictured": true
+},
+{
+"id": "alley_mh",
+"kind": "tile",
+"sku": "AlleyStraight_Manhole",
+"label": "Straight, manhole",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X0": [
+[
+"plain",
+80.0
+]
+],
+"X1": [
+[
+"plain",
+80.0
+]
+]
+},
+"plan": "img/tiles/alley_mh_plan.png",
+"img": "img/tiles/rendered/alley_mh.webp",
+"pictured": true
+},
+{
+"id": "olteeR",
+"kind": "tile",
+"sku": "TransitionOneLaneTeeRight",
+"label": "One-lane tee, right",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/olteeR_plan.png",
+"img": "img/tiles/rendered/olteeR.webp",
+"pictured": true
+},
+{
+"id": "olteeL",
+"kind": "tile",
+"sku": "TransitionOneLaneTeeLeft",
+"label": "One-lane tee, left",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/olteeL_plan.png",
+"img": "img/tiles/rendered/olteeL.webp",
+"pictured": true
+},
+{
+"id": "oltee",
+"kind": "tile",
+"sku": "OneLaneTeeJunction",
+"label": "T-junction",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+46.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/oltee_plan.png",
+"img": "img/tiles/rendered/oltee.webp",
+"pictured": true
+},
+{
+"id": "olcross",
+"kind": "tile",
+"sku": "OneLaneCrossroads",
+"label": "Crossroads",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+46.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+46.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/olcross_plan.png",
+"img": "img/tiles/rendered/olcross.webp",
+"pictured": true
+},
+{
+"id": "oldead",
+"kind": "tile",
+"sku": "OneLaneDeadEnd",
+"label": "Dead end",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/oldead_plan.png",
+"img": "img/tiles/rendered/oldead.webp",
+"pictured": true
+},
+{
+"id": "oloff",
+"kind": "tile",
+"sku": "OffsetOneLaneStraight",
+"label": "Offset straight",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/oloff_plan.png",
+"img": "img/tiles/rendered/oloff.webp",
+"pictured": true
+},
+{
+"id": "oloff_mh",
+"kind": "tile",
+"sku": "OffsetOneLaneStraight_Manhole",
+"label": "Offset straight, manhole",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/oloff_mh_plan.png",
+"img": "img/tiles/rendered/oloff_mh.webp",
+"pictured": true
+},
+{
+"id": "alleydead",
+"kind": "tile",
+"sku": "AlleyDeadEnd",
+"label": "Dead end",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+70.0
+],
+[
+"plain",
+5.0
+]
+],
+"X0": [
+[
+"plain",
+80.0
+]
+],
+"X1": [
+[
+"plain",
+80.0
+]
+]
+},
+"plan": "img/tiles/alleydead_plan.png",
+"img": "img/tiles/rendered/alleydead.webp",
+"pictured": true
+},
+{
+"id": "onelane_entry",
+"kind": "tile",
+"sku": "TransitionOneLaneToAlley",
+"label": "One-lane to alley",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+]
+},
+"plan": "img/tiles/onelane_entry_plan.png",
+"img": "img/tiles/rendered/onelane_entry.webp",
+"pictured": true
+},
+{
+"id": "offlong_mh",
+"kind": "tile",
+"sku": "OffsetLongStraight_Manhole",
+"label": "Offset long, manhole",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+160.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/offlong_mh_plan.png",
+"img": "img/tiles/rendered/offlong_mh.webp",
+"pictured": true
+},
+{
+"id": "olshiftL",
+"kind": "tile",
+"sku": "OneLaneShiftLeft",
+"label": "Lane shift, left",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+30.0
+]
+],
+"X0": [
+[
+"path",
+52.0
+],
+[
+"kerb",
+28.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/olshiftL_plan.png",
+"img": "img/tiles/rendered/olshiftL.webp",
+"pictured": true
+},
+{
+"id": "olshiftR",
+"kind": "tile",
+"sku": "OneLaneShiftRight",
+"label": "Lane shift, right",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+30.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+52.0
+],
+[
+"kerb",
+28.0
+]
+]
+},
+"plan": "img/tiles/olshiftR_plan.png",
+"img": "img/tiles/rendered/olshiftR.webp",
+"pictured": true
+},
+{
+"id": "offdead",
+"kind": "tile",
+"sku": "OffsetDeadEndLeft",
+"label": "Offset dead end, left",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"path",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/offdead_plan.png",
+"img": "img/tiles/rendered/offdead.webp",
+"pictured": true
+},
+{
+"id": "oloffdead",
+"kind": "tile",
+"sku": "OffsetOneLaneDeadEndLeft",
+"label": "Offset dead end, left",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"path",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+30.0
+]
+],
+"X0": [
+[
+"road",
+57.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+20.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/oloffdead_plan.png",
+"img": "img/tiles/rendered/oloffdead.webp",
+"pictured": true
+},
+{
+"id": "ltransR",
+"kind": "tile",
+"sku": "TransitionStreetEndRight",
+"label": "Street end, right",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+160.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/ltransR_plan.png",
+"img": "img/tiles/rendered/ltransR.webp",
+"pictured": true
+},
+{
+"id": "ltransL",
+"kind": "tile",
+"sku": "TransitionStreetEndLeft",
+"label": "Street end, left",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+160.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/ltransL_plan.png",
+"img": "img/tiles/rendered/ltransL.webp",
+"pictured": true
+},
+{
+"id": "offdeadR",
+"kind": "tile",
+"sku": "OffsetDeadEndRight",
+"label": "Offset dead end, right",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"path",
+55.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+99.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+]
+},
+"plan": "img/tiles/offdeadR_plan.png",
+"img": "img/tiles/rendered/offdeadR.webp",
+"pictured": true
+},
+{
+"id": "oloffdeadR",
+"kind": "tile",
+"sku": "OffsetOneLaneDeadEndRight",
+"label": "Offset dead end, right",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+30.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"path",
+30.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+44.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"road",
+57.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+20.0
+]
+]
+},
+"plan": "img/tiles/oloffdeadR_plan.png",
+"img": "img/tiles/rendered/oloffdeadR.webp",
+"pictured": true
+},
+{
+"id": "alleycorner",
+"kind": "tile",
+"sku": "AlleyCorner",
+"label": "Corner",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+4.0
+],
+[
+"path",
+21.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+80.0
+]
+],
+"X0": [
+[
+"plain",
+4.0
+],
+[
+"path",
+21.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X1": [
+[
+"plain",
+80.0
+]
+]
+},
+"plan": "img/tiles/alleycorner_plan.png",
+"img": "img/tiles/rendered/alleycorner.webp",
+"pictured": true
+},
+{
+"id": "alleytee",
+"kind": "tile",
+"sku": "AlleyTeeJunction",
+"label": "T-junction",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X0": [
+[
+"plain",
+80.0
+]
+],
+"X1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+]
+},
+"plan": "img/tiles/alleytee_plan.png",
+"img": "img/tiles/rendered/alleytee.webp",
+"pictured": true
+},
+{
+"id": "alleycross",
+"kind": "tile",
+"sku": "AlleyCrossroads",
+"label": "Crossroads",
+"group": "Alley",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"Y1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X0": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+],
+"X1": [
+[
+"plain",
+5.0
+],
+[
+"path",
+20.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+20.0
+],
+[
+"plain",
+5.0
+]
+]
+},
+"plan": "img/tiles/alleycross_plan.png",
+"img": "img/tiles/rendered/alleycross.webp",
+"pictured": true
+},
+{
+"id": "offshort_entry",
+"kind": "tile",
+"sku": "TransitionOffsetStreetToAlley",
+"label": "Offset street to alley",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/offshort_entry_plan.png",
+"img": "img/tiles/rendered/offshort_entry.webp",
+"pictured": true
+},
+{
+"id": "offteeR",
+"kind": "tile",
+"sku": "OffsetTeeJunctionRight",
+"label": "Offset tee, right",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+160.0
+]
+],
+"X1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+]
+},
+"plan": "img/tiles/offteeR_plan.png",
+"img": "img/tiles/rendered/offteeR.webp",
+"pictured": true
+},
+{
+"id": "offteeL",
+"kind": "tile",
+"sku": "OffsetTeeJunctionLeft",
+"label": "Offset tee, left",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+160.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/offteeL_plan.png",
+"img": "img/tiles/rendered/offteeL.webp",
+"pictured": true
+},
+{
+"id": "offcross",
+"kind": "tile",
+"sku": "OffsetCrossroads",
+"label": "Offset crossroads",
+"group": "Offset street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+160.0
+]
+],
+"X1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+]
+},
+"plan": "img/tiles/offcross_plan.png",
+"img": "img/tiles/rendered/offcross.webp",
+"pictured": true
+},
+{
+"id": "offolteeR",
+"kind": "tile",
+"sku": "TransitionOffsetOneLaneTeeRight",
+"label": "Offset tee, right",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+2.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/offolteeR_plan.png",
+"img": "img/tiles/rendered/offolteeR.webp",
+"pictured": true
+},
+{
+"id": "offolteeL",
+"kind": "tile",
+"sku": "TransitionOffsetOneLaneTeeLeft",
+"label": "Offset tee, left",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+99.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+55.0
+]
+],
+"X0": [
+[
+"road",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/offolteeL_plan.png",
+"img": "img/tiles/rendered/offolteeL.webp",
+"pictured": true
+},
+{
+"id": "parking",
+"kind": "tile",
+"sku": "ParkingLotLeft",
+"label": "Parking lot, left",
+"group": "Parking",
+"set": "stretch",
+"goal": "NZD$2,000",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+139.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+139.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+160.0
+]
+],
+"X1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+154.0
+],
+[
+"kerb",
+3.0
+]
+]
+},
+"plan": "img/tiles/parking_plan.png",
+"img": "img/tiles/rendered/parking.webp",
+"pictured": true
+},
+{
+"id": "parkingR",
+"kind": "tile",
+"sku": "ParkingLotRight",
+"label": "Parking lot, right",
+"group": "Parking",
+"set": "stretch",
+"goal": "NZD$2,000",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+139.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+139.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+154.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/parkingR_plan.png",
+"img": "img/tiles/rendered/parkingR.webp",
+"pictured": true
+},
+{
+"id": "medshort",
+"kind": "tile",
+"sku": "MedianStraight",
+"label": "Median straight",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/medshort_plan.png",
+"img": "img/tiles/rendered/medshort.webp",
+"pictured": true
+},
+{
+"id": "meddrain",
+"kind": "tile",
+"sku": "MedianStraightStormDrain",
+"label": "Median, storm drains",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/meddrain_plan.png",
+"img": "img/tiles/rendered/meddrain.webp",
+"pictured": true
+},
+{
+"id": "medstart",
+"kind": "tile",
+"sku": "TransitionMedianStart",
+"label": "Median start",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"plain",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/medstart_plan.png",
+"img": "img/tiles/rendered/medstart.webp",
+"pictured": true
+},
+{
+"id": "medfshort",
+"kind": "tile",
+"sku": "MedianFilledStraight",
+"label": "Flat median straight",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/medfshort_plan.png",
+"img": "img/tiles/rendered/medfshort.webp",
+"pictured": true
+},
+{
+"id": "medfdrain",
+"kind": "tile",
+"sku": "MedianFilledStraightStormDrain",
+"label": "Flat median, drains",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/medfdrain_plan.png",
+"img": "img/tiles/rendered/medfdrain.webp",
+"pictured": true
+},
+{
+"id": "medfstart",
+"kind": "tile",
+"sku": "TransitionMedianFilledStart",
+"label": "Flat median start",
+"group": "Median",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+19.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+10.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+50.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+19.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/medfstart_plan.png",
+"img": "img/tiles/rendered/medfstart.webp",
+"pictured": true
+},
+{
+"id": "roundabout",
+"kind": "tile",
+"sku": "Roundabout",
+"label": "Roundabout",
+"group": "Roundabout",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+]
+},
+"plan": "img/tiles/roundabout_plan.png",
+"img": "img/tiles/rendered/roundabout.webp",
+"pictured": true
+},
+{
+"id": "ltransT",
+"kind": "tile",
+"sku": "TransitionStreetEndTee",
+"label": "Street end, tee",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+160.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/ltransT_plan.png",
+"img": "img/tiles/rendered/ltransT.webp",
+"pictured": true
+},
+{
+"id": "olxcross",
+"kind": "tile",
+"sku": "TransitionOneLaneCrossroads",
+"label": "One-lane crossroads",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/olxcross_plan.png",
+"img": "img/tiles/rendered/olxcross.webp",
+"pictured": true
+},
+{
+"id": "olxcross_mh",
+"kind": "tile",
+"sku": "TransitionOneLaneCrossroads_Manhole",
+"label": "One-lane crossroads, manhole",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+]
+},
+"plan": "img/tiles/olxcross_mh_plan.png",
+"img": "img/tiles/rendered/olxcross_mh.webp",
+"pictured": true
+},
+{
+"id": "rbtee",
+"kind": "tile",
+"sku": "RoundaboutTeeJunction",
+"label": "Roundabout T-junction",
+"group": "Roundabout",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X1": [
+[
+"path",
+68.0
+],
+[
+"kerb",
+24.0
+],
+[
+"path",
+68.0
+]
+]
+},
+"plan": "img/tiles/rbtee_plan.png",
+"img": "img/tiles/rendered/rbtee.webp",
+"pictured": true
+},
+{
+"id": "long_crater",
+"kind": "tile",
+"sku": "LongStraight_Crater",
+"label": "Long straight, crater",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 160,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+160.0
+]
+],
+"X1": [
+[
+"path",
+160.0
+]
+]
+},
+"plan": "img/tiles/long_crater_plan.png",
+"img": "img/tiles/rendered/long_crater.webp",
+"pictured": true
+},
+{
+"id": "short_crater",
+"kind": "tile",
+"sku": "ShortStraight_Crater",
+"label": "Short straight, crater",
+"group": "Street",
+"set": "core",
+"goal": "",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+80.0
+]
+],
+"X1": [
+[
+"path",
+80.0
+]
+]
+},
+"plan": "img/tiles/short_crater_plan.png",
+"img": "img/tiles/rendered/short_crater.webp",
+"pictured": true
+},
+{
+"id": "short_entry2",
+"kind": "tile",
+"sku": "TransitionStreetToAlleyCrossroads",
+"label": "Street alley crossing",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 160,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"Y1": [
+[
+"path",
+27.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+100.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+27.0
+]
+],
+"X0": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+],
+"X1": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+]
+},
+"plan": "img/tiles/short_entry2_plan.png",
+"img": "img/tiles/rendered/short_entry2.webp",
+"pictured": true
+},
+{
+"id": "onelane_entry2",
+"kind": "tile",
+"sku": "TransitionOneLaneToAlleyCrossroads",
+"label": "One-lane alley crossing",
+"group": "Transition",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"Y1": [
+[
+"path",
+15.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+15.0
+]
+],
+"X0": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+],
+"X1": [
+[
+"path",
+25.0
+],
+[
+"road",
+30.0
+],
+[
+"path",
+25.0
+]
+]
+},
+"plan": "img/tiles/onelane_entry2_plan.png",
+"img": "img/tiles/rendered/onelane_entry2.webp",
+"pictured": true
+},
+{
+"id": "oldiagR",
+"kind": "tile",
+"sku": "OneLaneDiagonalRight",
+"label": "Diagonal, right",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+29.0
+]
+],
+"Y1": [
+[
+"path",
+29.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"kerb",
+26.0
+],
+[
+"path",
+54.0
+]
+],
+"X1": [
+[
+"path",
+54.0
+],
+[
+"kerb",
+26.0
+]
+]
+},
+"plan": "img/tiles/oldiagR_plan.png",
+"img": "img/tiles/rendered/oldiagR.webp",
+"pictured": true
+},
+{
+"id": "oldiagL",
+"kind": "tile",
+"sku": "OneLaneDiagonalLeft",
+"label": "Diagonal, left",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+29.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"kerb",
+3.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+],
+[
+"path",
+29.0
+]
+],
+"X0": [
+[
+"path",
+54.0
+],
+[
+"kerb",
+26.0
+]
+],
+"X1": [
+[
+"kerb",
+26.0
+],
+[
+"path",
+54.0
+]
+]
+},
+"plan": "img/tiles/oldiagL_plan.png",
+"img": "img/tiles/rendered/oldiagL.webp",
+"pictured": true
+},
+{
+"id": "oloffcurve",
+"kind": "tile",
+"sku": "OneLaneOffsetCurve",
+"label": "Offset curve",
+"group": "One-lane",
+"set": "stretch",
+"goal": "NZD$14,000",
+"w": 80,
+"l": 80,
+"edges": {
+"Y0": [
+[
+"path",
+30.0
+],
+[
+"kerb",
+3.0
+],
+[
+"road",
+44.0
+],
+[
+"kerb",
+3.0
+]
+],
+"Y1": [
+[
+"kerb",
+33.0
+],
+[
+"plain",
+44.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X0": [
+[
+"path",
+30.0
+],
+[
+"kerb",
+2.0
+],
+[
+"road",
+45.0
+],
+[
+"kerb",
+3.0
+]
+],
+"X1": [
+[
+"kerb",
+31.0
+],
+[
+"plain",
+49.0
+]
+]
+},
+"plan": "img/tiles/oloffcurve_plan.png",
+"img": "img/tiles/rendered/oloffcurve.webp",
+"pictured": true
+},
+{
+"id": "plain_160x160",
+"kind": "tile",
+"sku": "PlainTile_160x160",
+"label": "Plain ground, full",
+"group": "Plain ground",
+"set": "core",
+"w": 160,
+"l": 160,
+"plain": true,
+"plan": null,
+"img": "img/tiles/rendered/plain_160x160.webp",
+"pictured": true,
+"edges": {
+"Y0": [
+[
+"plain",
+160
+]
+],
+"Y1": [
+[
+"plain",
+160
+]
+],
+"X0": [
+[
+"plain",
+160
+]
+],
+"X1": [
+[
+"plain",
+160
+]
+]
+}
+},
+{
+"id": "plain_160x80",
+"kind": "tile",
+"sku": "PlainTile_160x80",
+"label": "Plain ground, half",
+"group": "Plain ground",
+"set": "core",
+"w": 160,
+"l": 80,
+"plain": true,
+"plan": null,
+"img": "img/tiles/rendered/plain_160x80.webp",
+"pictured": true,
+"edges": {
+"Y0": [
+[
+"plain",
+160
+]
+],
+"Y1": [
+[
+"plain",
+160
+]
+],
+"X0": [
+[
+"plain",
+80
+]
+],
+"X1": [
+[
+"plain",
+80
+]
+]
+}
+},
+{
+"id": "plain_80x80",
+"kind": "tile",
+"sku": "PlainTile_80x80",
+"label": "Plain ground, quarter",
+"group": "Plain ground",
+"set": "core",
+"w": 80,
+"l": 80,
+"plain": true,
+"plan": null,
+"img": "img/tiles/rendered/plain_80x80.webp",
+"pictured": true,
+"edges": {
+"Y0": [
+[
+"plain",
+80
+]
+],
+"Y1": [
+[
+"plain",
+80
+]
+],
+"X0": [
+[
+"plain",
+80
+]
+],
+"X1": [
+[
+"plain",
+80
+]
+]
+}
+}
+],
+"objects": [
+{
+"id": "obj_A01",
+"kind": "object",
+"num": "001",
+"label": "Residential Block A",
+"folder": "A01-ResidentialBlockA",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 137,
+"l": 175,
+"h": 144,
+"img": "img/cards/001.jpg",
+"scene": "KS_ResBlockC_hero_sq.blend",
+"subject": "ResBlockC",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Locator_Tooling",
+"_stl_one.001",
+"Collection",
+"Modifier_Keep"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A02",
+"kind": "object",
+"num": "002",
+"label": "Rural House A",
+"folder": "A02-RuralHouseA",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 105,
+"l": 120,
+"h": 94,
+"img": "img/cards/002.jpg",
+"scene": "KS_RuralHouseA_hero_sq.blend",
+"subject": "RuralHouseA",
+"hide_collections": [
+"Rig",
+"Backup_v3_DoorsWindows",
+"ScaleRef",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A03",
+"kind": "object",
+"num": "003",
+"label": "Rural House B",
+"folder": "A03-RuralHouseB",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 125,
+"l": 76,
+"h": 109,
+"img": "img/cards/003.jpg",
+"scene": "KS_RuralHouseB_hero_sq.blend",
+"subject": "RuralHouseB",
+"hide_collections": [
+"Rig",
+"ScaleRef",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A04",
+"kind": "object",
+"num": "004",
+"label": "Rural House C",
+"folder": "A04-RuralHouseC",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 129,
+"l": 112,
+"h": 105,
+"img": "img/cards/004.jpg",
+"scene": "KS_RuralHouseC_hero_sq.blend",
+"subject": "RuralHouseC",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": [
+"Joiner"
+]
+},
+{
+"id": "obj_A05",
+"kind": "object",
+"num": "005",
+"label": "Rural House D",
+"folder": "A05-RuralHouseD",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 151,
+"l": 164,
+"h": 149,
+"img": "img/cards/005.jpg",
+"scene": "KS_RuralHouseD_hero_sq.blend",
+"subject": "RuralHouseD",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A06",
+"kind": "object",
+"num": "006",
+"label": "Rural Brick House",
+"folder": "A06-RuralBrickHouse",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 134,
+"l": 120,
+"h": 109,
+"img": "img/cards/006.jpg",
+"scene": "KS_RuralBrickHouse_hero_sq.blend",
+"subject": "RBH Moderately Damaged Architecture",
+"hide_collections": [
+"Hero Camera and Lights.001",
+"Render Environment.001",
+"Roof Print Layout Clean",
+"Roof Print Layout Moderately Damaged",
+"RBH Rebuilt Clean Architecture",
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A07",
+"kind": "object",
+"num": "007",
+"label": "Residential Building A",
+"folder": "A07-ResidentialBuildingA",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 145,
+"l": 145,
+"h": 145,
+"img": "img/cards/007.jpg",
+"scene": "KS_ResidentialBuildingA_hero_sq.blend",
+"subject": "BLDG",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_A08",
+"kind": "object",
+"num": "008",
+"label": "Residential Building B",
+"folder": "A08-ResidentialBuildingB",
+"group": "Residential Building",
+"set": "core",
+"goal": "",
+"w": 122,
+"l": 146,
+"h": 142,
+"img": "img/cards/008.jpg",
+"scene": "KS_ResidentialBuildingB_hero_sq.blend",
+"subject": "BLDG",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B01",
+"kind": "object",
+"num": "009",
+"label": "Grocery Shop",
+"folder": "B01-GroceryShop",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 104,
+"l": 74,
+"h": 65,
+"img": "img/cards/009.jpg",
+"scene": "KS_GroceryShop_hero_sq.blend",
+"subject": "SCB | Worn editable architecture",
+"hide_collections": [
+"SCB | Hero camera and lights",
+"SCB | Render environment",
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B02",
+"kind": "object",
+"num": "010",
+"label": "Town Main Shop",
+"folder": "B02-TownMainShops",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 218,
+"l": 143,
+"h": 71,
+"img": "img/cards/010.jpg",
+"scene": "KS_TownMainShops_hero_sq.blend",
+"subject": "TownMainShops",
+"hide_collections": [
+"Collection",
+"TMS_Modifier_Keep",
+"Proxy",
+"Rig"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B03",
+"kind": "object",
+"num": "011",
+"label": "Newspaper Kiosk",
+"folder": "B03-NewspaperKiosk",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 64,
+"l": 51,
+"h": 50,
+"img": "img/cards/011.jpg",
+"scene": "KS_NewspaperKiosk_hero_sq.blend",
+"subject": "NewspaperKiosk",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B04",
+"kind": "object",
+"num": "012",
+"label": "Ice Cream Kiosk",
+"folder": "B04-IceCreamKiosk",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 100,
+"l": 64,
+"h": 64,
+"img": "img/cards/012.jpg",
+"scene": "KS_IceCreamKiosk_hero_sq.blend",
+"subject": "IceCreamKiosk",
+"hide_collections": [
+"ICK_Modifier_Keep",
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B05",
+"kind": "object",
+"num": "013",
+"label": "Bus Stop",
+"folder": "B05-BusStop",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 96,
+"l": 45,
+"h": 58,
+"img": "img/cards/013.jpg",
+"scene": "KS_BusStop_hero_sq.blend",
+"subject": "BusStop",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_B06",
+"kind": "object",
+"num": "014",
+"label": "Abandoned Storage Shed",
+"folder": "B06-AbandonedStorageShed",
+"group": "Commercial Building",
+"set": "core",
+"goal": "",
+"w": 66,
+"l": 50,
+"h": 50,
+"img": "img/cards/014.jpg",
+"scene": "KS_AbandonedStorageShed_hero_sq.blend",
+"subject": "ASS_Effects",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_C01",
+"kind": "object",
+"num": "015",
+"label": "Town Hall",
+"folder": "C01-TownHall",
+"group": "Public Structure",
+"set": "core",
+"goal": "",
+"w": 142,
+"l": 123,
+"h": 77,
+"img": "img/cards/015.jpg",
+"scene": "KS_TownHall_hero_sq.blend",
+"subject": "BLDG",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_C02",
+"kind": "object",
+"num": "016",
+"label": "Town Church",
+"folder": "C02-TownChurch",
+"group": "Public Structure",
+"set": "core",
+"goal": "",
+"w": 118,
+"l": 145,
+"h": 168,
+"img": "img/cards/016.jpg",
+"scene": "KS_TownChurch_hero_sq.blend",
+"subject": "BLDG",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_C03",
+"kind": "object",
+"num": "017",
+"label": "Ukraine Sign",
+"folder": "C03-UkraineSign",
+"group": "Public Structure",
+"set": "core",
+"goal": "",
+"w": 65,
+"l": 24,
+"h": 78,
+"img": "img/cards/017.jpg",
+"scene": "KS_UkraineSign_hero_sq.blend",
+"subject": "UkraineSign",
+"hide_collections": [
+"TS_Helpers",
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_D06",
+"kind": "object",
+"num": "053",
+"label": "Cell Site Station",
+"folder": "D06-CellSiteStation",
+"group": "Public Structure",
+"set": "stretch",
+"goal": "NZD$4,000",
+"w": 85,
+"l": 75,
+"h": 110,
+"img": "img/cards/053.jpg",
+"scene": "KS_CellSiteStation_hero_sq.blend",
+"subject": "CSS Effects Parts",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "prop_WheelieBin",
+"kind": "object",
+"prop": true,
+"num": "068",
+"label": "Wheelie bin",
+"folder": "D05-RoadSystem Accessories",
+"group": "Bins",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 12.2,
+"l": 14.0,
+"h": 21.0,
+"img": "img/props/WheelieBin.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"01 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_CommunalBin",
+"kind": "object",
+"prop": true,
+"num": "069",
+"label": "Communal bin",
+"folder": "D05-RoadSystem Accessories",
+"group": "Bins",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 25.0,
+"l": 20.0,
+"h": 26.0,
+"img": "img/props/CommunalBin.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"02 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_RubbishBin",
+"kind": "object",
+"prop": true,
+"num": "070",
+"label": "Rubbish bin",
+"folder": "D05-RoadSystem Accessories",
+"group": "Bins",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 22.0,
+"l": 20.2,
+"h": 23.0,
+"img": "img/props/RubbishBin.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A05 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_ClothRecycleBin",
+"kind": "object",
+"prop": true,
+"num": "071",
+"label": "Cloth recycle bin",
+"folder": "D05-RoadSystem Accessories",
+"group": "Bins",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 14.3,
+"l": 13.4,
+"h": 24.7,
+"img": "img/props/ClothRecycleBin.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A09 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_RoadsideSkip",
+"kind": "object",
+"prop": true,
+"num": "072",
+"label": "Roadside skip",
+"folder": "D05-RoadSystem Accessories",
+"group": "Skip and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 65.0,
+"l": 34.0,
+"h": 29.0,
+"img": "img/props/RoadsideSkip.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"06 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_UtilityCabinetA",
+"kind": "object",
+"prop": true,
+"num": "073",
+"label": "Utility cabinet A",
+"folder": "D05-RoadSystem Accessories",
+"group": "Cabinets",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 22.0,
+"l": 13.2,
+"h": 29.0,
+"img": "img/props/UtilityCabinetA.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"07 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_UtilityCabinetB",
+"kind": "object",
+"prop": true,
+"num": "074",
+"label": "Utility cabinet B",
+"folder": "D05-RoadSystem Accessories",
+"group": "Cabinets",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 24.0,
+"l": 13.2,
+"h": 28.0,
+"img": "img/props/UtilityCabinetB.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"08 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_UtilityCabinetC",
+"kind": "object",
+"prop": true,
+"num": "075",
+"label": "Utility cabinet C",
+"folder": "D05-RoadSystem Accessories",
+"group": "Cabinets",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 18.0,
+"l": 12.2,
+"h": 26.0,
+"img": "img/props/UtilityCabinetC.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"09 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_ShortGuardrail",
+"kind": "object",
+"prop": true,
+"num": "076",
+"label": "Short guardrail",
+"folder": "D05-RoadSystem Accessories",
+"group": "Guardrails",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 60.0,
+"l": 4.3,
+"h": 16.0,
+"img": "img/props/ShortGuardrail.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A01 |",
+"Guardrail Base | Short"
+],
+"zbase": 11.0,
+"exact": false
+},
+{
+"id": "prop_LongGuardrail",
+"kind": "object",
+"prop": true,
+"num": "077",
+"label": "Long guardrail",
+"folder": "D05-RoadSystem Accessories",
+"group": "Guardrails",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 120.0,
+"l": 4.3,
+"h": 16.0,
+"img": "img/props/LongGuardrail.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A02 |",
+"Guardrail Base | Long"
+],
+"zbase": 11.0,
+"exact": false
+},
+{
+"id": "prop_SmallCrate",
+"kind": "object",
+"prop": true,
+"num": "078",
+"label": "Small crate",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 12.0,
+"l": 12.4,
+"h": 12.0,
+"img": "img/props/SmallCrate.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A03a |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_MediumCrate",
+"kind": "object",
+"prop": true,
+"num": "079",
+"label": "Medium crate",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 18.0,
+"l": 18.4,
+"h": 18.0,
+"img": "img/props/MediumCrate.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A03b |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_LongCrate",
+"kind": "object",
+"prop": true,
+"num": "080",
+"label": "Long crate",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 24.0,
+"l": 16.4,
+"h": 12.0,
+"img": "img/props/LongCrate.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A03c |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_WoodenBoardsStack",
+"kind": "object",
+"prop": true,
+"num": "081",
+"label": "Wooden boards stack",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 40.0,
+"l": 18.0,
+"h": 12.0,
+"img": "img/props/WoodenBoardsStack.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A07 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_PalletCementBlocks",
+"kind": "object",
+"prop": true,
+"num": "082",
+"label": "Pallet of cement blocks",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 24.0,
+"l": 20.0,
+"h": 24.0,
+"img": "img/props/PalletCementBlocks.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A10 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_ClayBrickStack",
+"kind": "object",
+"prop": true,
+"num": "083",
+"label": "Clay brick stack",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 23.8,
+"l": 19.8,
+"h": 17.9,
+"img": "img/props/ClayBrickStack.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A06 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_PipeStack",
+"kind": "object",
+"prop": true,
+"num": "084",
+"label": "Pipe stack",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 42.0,
+"l": 26.0,
+"h": 23.5,
+"img": "img/props/PipeStack.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A04 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_CableCoil",
+"kind": "object",
+"prop": true,
+"num": "085",
+"label": "Cable coil",
+"folder": "D05-RoadSystem Accessories",
+"group": "Crates and stacks",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 20.0,
+"l": 20.0,
+"h": 5.8,
+"img": "img/props/CableCoil.webp",
+"master": "D05-RoadSystem Accessories/01-Model/RoadSystem Accessories.blend",
+"tokens": [
+"A08 |"
+],
+"zbase": 8.0,
+"exact": false
+},
+{
+"id": "prop_ImpactCraterSmall",
+"kind": "object",
+"prop": true,
+"num": "086",
+"label": "Impact crater, small",
+"folder": "D07-ImpactCraters",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 47.5,
+"l": 48.1,
+"h": 11.2,
+"img": "img/props/ImpactCraterSmall.webp",
+"master": "D07-ImpactCraters/01-Model/D07_ImpactCraters.blend",
+"tokens": [
+"ImpactCrater_50"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_ImpactCraterLarge",
+"kind": "object",
+"prop": true,
+"num": "087",
+"label": "Impact crater, large",
+"folder": "D07-ImpactCraters",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 75.9,
+"l": 74.6,
+"h": 13.8,
+"img": "img/props/ImpactCraterLarge.webp",
+"master": "D07-ImpactCraters/01-Model/D07_ImpactCraters.blend",
+"tokens": [
+"ImpactCrater_80"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_ImpactCraterSmallLowRim",
+"kind": "object",
+"prop": true,
+"num": "088",
+"label": "Low-rim crater, small",
+"folder": "D07-ImpactCraters",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 47.0,
+"l": 48.0,
+"h": 7.5,
+"img": "img/props/ImpactCraterSmallLowRim.webp",
+"master": "D07-ImpactCraters/01-Model/D07_ImpactCraters.blend",
+"tokens": [
+"ImpactCrater_50_LowRim"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_ImpactCraterLargeLowRim",
+"kind": "object",
+"prop": true,
+"num": "089",
+"label": "Low-rim crater, large",
+"folder": "D07-ImpactCraters",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 75.5,
+"l": 75.2,
+"h": 8.9,
+"img": "img/props/ImpactCraterLargeLowRim.webp",
+"master": "D07-ImpactCraters/01-Model/D07_ImpactCraters.blend",
+"tokens": [
+"ImpactCrater_80_LowRim"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_Debris1",
+"kind": "object",
+"prop": true,
+"num": "090",
+"label": "Debris 1",
+"folder": "D08-Debris",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 45.6,
+"l": 32.1,
+"h": 9.5,
+"img": "img/props/Debris1.webp",
+"master": "D08-Debris/01-Model/Debris1.blend",
+"tokens": [
+"Debris 1"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_Debris1Half",
+"kind": "object",
+"prop": true,
+"num": "091",
+"label": "Debris 1, half",
+"folder": "D08-Debris",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 44.4,
+"l": 16.1,
+"h": 9.5,
+"img": "img/props/Debris1Half.webp",
+"master": "D08-Debris/01-Model/Debris1_Half.blend",
+"tokens": [
+"Debris 1"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_Debris2",
+"kind": "object",
+"prop": true,
+"num": "092",
+"label": "Debris 2",
+"folder": "D08-Debris",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 52.2,
+"l": 35.8,
+"h": 8.8,
+"img": "img/props/Debris2.webp",
+"master": "D08-Debris/01-Model/Debris2.blend",
+"tokens": [
+"Debris 2"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "prop_Debris2Half",
+"kind": "object",
+"prop": true,
+"num": "093",
+"label": "Debris 2, half",
+"folder": "D08-Debris",
+"group": "Craters and debris",
+"set": "stretch",
+"goal": "NZD$6,000",
+"w": 52.2,
+"l": 23.3,
+"h": 8.8,
+"img": "img/props/Debris2Half.webp",
+"master": "D08-Debris/01-Model/Debris2_Half.blend",
+"tokens": [
+"Debris 2"
+],
+"zbase": 8.0,
+"exact": true
+},
+{
+"id": "obj_D02",
+"kind": "object",
+"num": "094",
+"label": "Rural House E",
+"folder": "D02-RuralHouseE",
+"group": "Residential Building",
+"set": "stretch",
+"goal": "NZD$8,000",
+"w": 109,
+"l": 124,
+"h": 105,
+"img": "img/cards/094.jpg",
+"scene": "KS_RuralHouseE_hero_sq.blend",
+"subject": "HOUSE",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+},
+{
+"id": "obj_D03",
+"kind": "object",
+"num": "099",
+"label": "Residential Block B",
+"folder": "D03-ResidentialBlockB",
+"group": "Residential Building",
+"set": "stretch",
+"goal": "NZD$12,000",
+"w": 180,
+"l": 208,
+"h": 246,
+"img": "img/cards/099.jpg",
+"scene": "KS_ResBlockB_hero_sq.blend",
+"subject": "ResidentialBlockB",
+"hide_collections": [
+"Rig",
+"Proxy",
+"Collection"
+],
+"hide_objects": []
+}
+],
+"legacy": {
+"obj_001": "obj_A01",
+"obj_002": "obj_A02",
+"obj_003": "obj_A03",
+"obj_004": "obj_A04",
+"obj_005": "obj_A05",
+"obj_006": "obj_A06",
+"obj_007": "obj_B01",
+"obj_008": "obj_B02",
+"obj_009": "obj_B03",
+"obj_010": "obj_B04",
+"obj_011": "obj_B05",
+"obj_012": "obj_B06",
+"obj_013": "obj_C03",
+"obj_047": "obj_D06",
+"obj_080": "obj_D02",
+"obj_085": "obj_D03"
+}
+}
