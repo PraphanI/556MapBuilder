@@ -1020,7 +1020,7 @@
 "label": "Straight",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -1092,7 +1092,7 @@
 "label": "90\u00b0 curve",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -1196,7 +1196,7 @@
 "label": "Merge, left",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1276,7 +1276,7 @@
 "label": "Merge, right",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1356,7 +1356,7 @@
 "label": "Offset merge, left",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1436,7 +1436,7 @@
 "label": "Offset merge, right",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1516,7 +1516,7 @@
 "label": "Straight",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -1660,7 +1660,7 @@
 "label": "Street to alley",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1740,7 +1740,7 @@
 "label": "Straight, manhole",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -1812,7 +1812,7 @@
 "label": "Straight, manhole",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -1884,7 +1884,7 @@
 "label": "One-lane tee, right",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -1972,7 +1972,7 @@
 "label": "One-lane tee, left",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -2060,7 +2060,7 @@
 "label": "T-junction",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2148,7 +2148,7 @@
 "label": "Crossroads",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2252,7 +2252,7 @@
 "label": "Dead end",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2324,7 +2324,7 @@
 "label": "Offset straight",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2388,7 +2388,7 @@
 "label": "Offset straight, manhole",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2452,7 +2452,7 @@
 "label": "Dead end",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2516,7 +2516,7 @@
 "label": "One-lane to alley",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2660,7 +2660,7 @@
 "label": "Lane shift, left",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2732,7 +2732,7 @@
 "label": "Lane shift, right",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2876,7 +2876,7 @@
 "label": "Offset dead end, left",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -2948,7 +2948,7 @@
 "label": "Street end, right",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -3020,7 +3020,7 @@
 "label": "Street end, left",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -3164,7 +3164,7 @@
 "label": "Offset dead end, right",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -3236,7 +3236,7 @@
 "label": "Corner",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -3308,7 +3308,7 @@
 "label": "T-junction",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -3396,7 +3396,7 @@
 "label": "Crossroads",
 "group": "Alley",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -3500,7 +3500,7 @@
 "label": "Offset street to alley",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -3788,7 +3788,7 @@
 "label": "Offset tee, right",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -3868,7 +3868,7 @@
 "label": "Offset tee, left",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -4772,7 +4772,7 @@
 "label": "Street end, tee",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -4860,7 +4860,7 @@
 "label": "One-lane crossroads",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -4964,7 +4964,7 @@
 "label": "One-lane crossroads, manhole",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -5308,7 +5308,7 @@
 "label": "Street alley crossing",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 160,
 "l": 80,
 "edges": {
@@ -5396,7 +5396,7 @@
 "label": "One-lane alley crossing",
 "group": "Transition",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -5484,7 +5484,7 @@
 "label": "Diagonal, right",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -5556,7 +5556,7 @@
 "label": "Diagonal, left",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -5628,7 +5628,7 @@
 "label": "Offset curve",
 "group": "One-lane",
 "set": "stretch",
-"goal": "NZD$14,000",
+"goal": "NZD$12,000",
 "w": 80,
 "l": 80,
 "edges": {
@@ -6212,9 +6212,1975 @@
 "hide_objects": []
 },
 {
+"id": "wall_W01C_Full",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.3,
+"h": 42.0,
+"img": "img/walls/wall_W01C_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Half",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.3,
+"h": 42.0,
+"img": "img/walls/wall_W01C_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Straight",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01C_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Corner",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01C_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_End",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01C_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_T",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01C_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Cross",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01C_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 67.6,
+"l": 13.6,
+"h": 47.2,
+"img": "img/walls/wall_W01C_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Vehicle_PierL",
+"W01_Clean_Vehicle_PierR",
+"W01_Clean_Vehicle_LeafL",
+"W01_Clean_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01C_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "051",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, clean",
+"set": "core",
+"goal": "",
+"w": 35.3,
+"l": 14.4,
+"h": 46.4,
+"img": "img/walls/wall_W01C_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Clean_Pedestrian_Frame",
+"W01_Clean_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 1.65
+},
+{
+"id": "wall_W01D_Full",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.3,
+"h": 42.0,
+"img": "img/walls/wall_W01D_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Wall_Full_1"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_Breached",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Breached wall panel",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 11.1,
+"h": 42.0,
+"img": "img/walls/wall_W01D_Breached.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Damaged_Wall_A"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_Corner",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01D_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_End",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01D_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_T",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01D_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_Cross",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W01D_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 67.6,
+"l": 13.6,
+"h": 47.2,
+"img": "img/walls/wall_W01D_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Vehicle_PierL",
+"W01_Shot_Vehicle_PierR",
+"W01_Shot_Vehicle_LeafL",
+"W01_Shot_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W01D_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "052",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Traditional Ukrainian Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 35.3,
+"l": 14.4,
+"h": 46.4,
+"img": "img/walls/wall_W01D_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W01_Shot_Pedestrian_Frame",
+"W01_Shot_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 1.65
+},
+{
+"id": "wall_W02C_Full",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W02C_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Half",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W02C_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Straight",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02C_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Corner",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02C_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_End",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02C_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_T",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02C_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Cross",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02C_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W02C_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Vehicle_Frame",
+"W02_Clean_Vehicle_LeafL",
+"W02_Clean_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02C_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "053",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, clean",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W02C_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Clean_Pedestrian_Frame",
+"W02_Clean_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Full",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W02D_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Half",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W02D_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Breached",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Breached wall panel",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 16.4,
+"h": 42.0,
+"img": "img/walls/wall_W02D_Breached.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Breached_Wall"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Straight",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02D_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Corner",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02D_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_End",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02D_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_T",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02D_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Cross",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W02D_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W02D_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Vehicle_Frame",
+"W02_Damaged_Vehicle_LeafL",
+"W02_Damaged_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W02D_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "054",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Red Brick Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W02D_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W02_Damaged_Pedestrian_Frame",
+"W02_Damaged_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Full",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W03C_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Half",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W03C_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Straight",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03C_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Corner",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03C_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_End",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03C_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_T",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03C_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Cross",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03C_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W03C_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Vehicle_Frame",
+"W03_Clean_Vehicle_LeafL",
+"W03_Clean_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03C_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "055",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, clean",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W03C_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Clean_Pedestrian_Frame",
+"W03_Clean_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Full",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W03D_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Half",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W03D_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Breached",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Breached wall panel",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 16.4,
+"h": 42.0,
+"img": "img/walls/wall_W03D_Breached.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Breached_Wall"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Straight",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03D_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Corner",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03D_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_End",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03D_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_T",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03D_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Cross",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W03D_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W03D_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Vehicle_Frame",
+"W03_Damaged_Vehicle_LeafL",
+"W03_Damaged_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W03D_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "056",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Whitewashed Masonry Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W03D_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W03_Damaged_Pedestrian_Frame",
+"W03_Damaged_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Full",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W04C_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Half",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W04C_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Straight",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04C_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Corner",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04C_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_End",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04C_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_T",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04C_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Cross",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04C_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W04C_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Vehicle_Frame",
+"W04_Clean_Vehicle_LeafL",
+"W04_Clean_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04C_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "057",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, clean",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W04C_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Clean_Pedestrian_Frame",
+"W04_Clean_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Full",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Wall panel",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W04D_Full.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Wall_Full"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Half",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Half wall panel",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 28.4,
+"l": 7.2,
+"h": 42.0,
+"img": "img/walls/wall_W04D_Half.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Wall_Half"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Breached",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Breached wall panel",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 53.6,
+"l": 16.4,
+"h": 42.0,
+"img": "img/walls/wall_W04D_Breached.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Breached_Wall"
+],
+"exact": true,
+"zbase": 8.0,
+"m": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Straight",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pillar, straight",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04D_Straight.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pillar_Straight"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Corner",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pillar, corner",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04D_Corner.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pillar_Corner"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_End",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pillar, end",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04D_End.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pillar_End"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_T",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pillar, T",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04D_T.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pillar_T"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Cross",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pillar, cross",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 12.2,
+"l": 12.2,
+"h": 46.2,
+"img": "img/walls/wall_W04D_Cross.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pillar_Cross"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X",
+"+Y",
+"-Y"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Vehicle",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Vehicle gate",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 80.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W04D_Vehicle.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Vehicle_Frame",
+"W04_Damaged_Vehicle_LeafL",
+"W04_Damaged_Vehicle_LeafR"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
+"id": "wall_W04D_Pedestrian",
+"kind": "object",
+"wall": true,
+"num": "058",
+"label": "Pedestrian gate",
+"folder": "D01-Modular Walls",
+"group": "Brick Worn Plaster Wall, damaged",
+"set": "core",
+"goal": "",
+"w": 40.0,
+"l": 12.2,
+"h": 47.2,
+"img": "img/walls/wall_W04D_Pedestrian.webp",
+"master": "D01-Modular Walls/01-Model/Modular Walls.blend",
+"tokens": [
+"W04_Damaged_Pedestrian_Frame",
+"W04_Damaged_Pedestrian_Leaf"
+],
+"exact": true,
+"zbase": 8.0,
+"f": [
+"+X",
+"-X"
+],
+"inset": 2.9
+},
+{
 "id": "obj_D06",
 "kind": "object",
-"num": "053",
+"num": "061",
 "label": "Cell Site Station",
 "folder": "D06-CellSiteStation",
 "group": "Public Structure",
@@ -6223,7 +8189,7 @@
 "w": 85,
 "l": 75,
 "h": 110,
-"img": "img/cards/053.jpg",
+"img": "img/cards/061.jpg",
 "scene": "KS_CellSiteStation_hero_sq.blend",
 "subject": "CSS Effects Parts",
 "hide_collections": [
@@ -6237,7 +8203,7 @@
 "id": "prop_WheelieBin",
 "kind": "object",
 "prop": true,
-"num": "068",
+"num": "076",
 "label": "Wheelie bin",
 "folder": "D05-RoadSystem Accessories",
 "group": "Bins",
@@ -6258,7 +8224,7 @@
 "id": "prop_CommunalBin",
 "kind": "object",
 "prop": true,
-"num": "069",
+"num": "077",
 "label": "Communal bin",
 "folder": "D05-RoadSystem Accessories",
 "group": "Bins",
@@ -6279,7 +8245,7 @@
 "id": "prop_RubbishBin",
 "kind": "object",
 "prop": true,
-"num": "070",
+"num": "078",
 "label": "Rubbish bin",
 "folder": "D05-RoadSystem Accessories",
 "group": "Bins",
@@ -6300,7 +8266,7 @@
 "id": "prop_ClothRecycleBin",
 "kind": "object",
 "prop": true,
-"num": "071",
+"num": "079",
 "label": "Cloth recycle bin",
 "folder": "D05-RoadSystem Accessories",
 "group": "Bins",
@@ -6321,7 +8287,7 @@
 "id": "prop_RoadsideSkip",
 "kind": "object",
 "prop": true,
-"num": "072",
+"num": "080",
 "label": "Roadside skip",
 "folder": "D05-RoadSystem Accessories",
 "group": "Skip and stacks",
@@ -6342,7 +8308,7 @@
 "id": "prop_UtilityCabinetA",
 "kind": "object",
 "prop": true,
-"num": "073",
+"num": "081",
 "label": "Utility cabinet A",
 "folder": "D05-RoadSystem Accessories",
 "group": "Cabinets",
@@ -6363,7 +8329,7 @@
 "id": "prop_UtilityCabinetB",
 "kind": "object",
 "prop": true,
-"num": "074",
+"num": "082",
 "label": "Utility cabinet B",
 "folder": "D05-RoadSystem Accessories",
 "group": "Cabinets",
@@ -6384,7 +8350,7 @@
 "id": "prop_UtilityCabinetC",
 "kind": "object",
 "prop": true,
-"num": "075",
+"num": "083",
 "label": "Utility cabinet C",
 "folder": "D05-RoadSystem Accessories",
 "group": "Cabinets",
@@ -6405,7 +8371,7 @@
 "id": "prop_ShortGuardrail",
 "kind": "object",
 "prop": true,
-"num": "076",
+"num": "084",
 "label": "Short guardrail",
 "folder": "D05-RoadSystem Accessories",
 "group": "Guardrails",
@@ -6427,7 +8393,7 @@
 "id": "prop_LongGuardrail",
 "kind": "object",
 "prop": true,
-"num": "077",
+"num": "085",
 "label": "Long guardrail",
 "folder": "D05-RoadSystem Accessories",
 "group": "Guardrails",
@@ -6449,7 +8415,7 @@
 "id": "prop_SmallCrate",
 "kind": "object",
 "prop": true,
-"num": "078",
+"num": "086",
 "label": "Small crate",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6470,7 +8436,7 @@
 "id": "prop_MediumCrate",
 "kind": "object",
 "prop": true,
-"num": "079",
+"num": "087",
 "label": "Medium crate",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6491,7 +8457,7 @@
 "id": "prop_LongCrate",
 "kind": "object",
 "prop": true,
-"num": "080",
+"num": "088",
 "label": "Long crate",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6512,7 +8478,7 @@
 "id": "prop_WoodenBoardsStack",
 "kind": "object",
 "prop": true,
-"num": "081",
+"num": "089",
 "label": "Wooden boards stack",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6533,7 +8499,7 @@
 "id": "prop_PalletCementBlocks",
 "kind": "object",
 "prop": true,
-"num": "082",
+"num": "090",
 "label": "Pallet of cement blocks",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6554,7 +8520,7 @@
 "id": "prop_ClayBrickStack",
 "kind": "object",
 "prop": true,
-"num": "083",
+"num": "091",
 "label": "Clay brick stack",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6575,7 +8541,7 @@
 "id": "prop_PipeStack",
 "kind": "object",
 "prop": true,
-"num": "084",
+"num": "092",
 "label": "Pipe stack",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6596,7 +8562,7 @@
 "id": "prop_CableCoil",
 "kind": "object",
 "prop": true,
-"num": "085",
+"num": "093",
 "label": "Cable coil",
 "folder": "D05-RoadSystem Accessories",
 "group": "Crates and stacks",
@@ -6617,7 +8583,7 @@
 "id": "prop_ImpactCraterSmall",
 "kind": "object",
 "prop": true,
-"num": "086",
+"num": "094",
 "label": "Impact crater, small",
 "folder": "D07-ImpactCraters",
 "group": "Craters and debris",
@@ -6638,7 +8604,7 @@
 "id": "prop_ImpactCraterLarge",
 "kind": "object",
 "prop": true,
-"num": "087",
+"num": "095",
 "label": "Impact crater, large",
 "folder": "D07-ImpactCraters",
 "group": "Craters and debris",
@@ -6659,7 +8625,7 @@
 "id": "prop_ImpactCraterSmallLowRim",
 "kind": "object",
 "prop": true,
-"num": "088",
+"num": "096",
 "label": "Low-rim crater, small",
 "folder": "D07-ImpactCraters",
 "group": "Craters and debris",
@@ -6680,7 +8646,7 @@
 "id": "prop_ImpactCraterLargeLowRim",
 "kind": "object",
 "prop": true,
-"num": "089",
+"num": "097",
 "label": "Low-rim crater, large",
 "folder": "D07-ImpactCraters",
 "group": "Craters and debris",
@@ -6701,7 +8667,7 @@
 "id": "prop_Debris1",
 "kind": "object",
 "prop": true,
-"num": "090",
+"num": "098",
 "label": "Debris 1",
 "folder": "D08-Debris",
 "group": "Craters and debris",
@@ -6722,7 +8688,7 @@
 "id": "prop_Debris1Half",
 "kind": "object",
 "prop": true,
-"num": "091",
+"num": "099",
 "label": "Debris 1, half",
 "folder": "D08-Debris",
 "group": "Craters and debris",
@@ -6743,7 +8709,7 @@
 "id": "prop_Debris2",
 "kind": "object",
 "prop": true,
-"num": "092",
+"num": "100",
 "label": "Debris 2",
 "folder": "D08-Debris",
 "group": "Craters and debris",
@@ -6764,7 +8730,7 @@
 "id": "prop_Debris2Half",
 "kind": "object",
 "prop": true,
-"num": "093",
+"num": "101",
 "label": "Debris 2, half",
 "folder": "D08-Debris",
 "group": "Craters and debris",
@@ -6784,7 +8750,7 @@
 {
 "id": "obj_D02",
 "kind": "object",
-"num": "094",
+"num": "102",
 "label": "Rural House E",
 "folder": "D02-RuralHouseE",
 "group": "Residential Building",
@@ -6793,7 +8759,7 @@
 "w": 109,
 "l": 124,
 "h": 105,
-"img": "img/cards/094.jpg",
+"img": "img/cards/102.jpg",
 "scene": "KS_RuralHouseE_hero_sq.blend",
 "subject": "HOUSE",
 "hide_collections": [
@@ -6806,16 +8772,16 @@
 {
 "id": "obj_D03",
 "kind": "object",
-"num": "099",
+"num": "103",
 "label": "Residential Block B",
 "folder": "D03-ResidentialBlockB",
 "group": "Residential Building",
 "set": "stretch",
-"goal": "NZD$12,000",
+"goal": "NZD$10,000",
 "w": 180,
 "l": 208,
 "h": 246,
-"img": "img/cards/099.jpg",
+"img": "img/cards/103.jpg",
 "scene": "KS_ResBlockB_hero_sq.blend",
 "subject": "ResidentialBlockB",
 "hide_collections": [

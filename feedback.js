@@ -21,9 +21,9 @@ $("#fbForm").onsubmit = async e => {
   const main = { "Bug": f.bug_what, "Feature request": f.feat_wish, "Other": f.other_text }[t];
   if (!main.value.trim()) { $("#fbMsg").textContent = "Please write a few words first."; main.focus(); return; }
   $("#fbMap").value = $("#fbAttach").checked ? JSON.stringify(serialise()) : "";
-  const n = { tile: 0, building: 0, prop: 0 };
-  items.forEach(i => { const d = DEF[i.id]; n[d.kind === "tile" ? "tile" : d.prop ? "prop" : "building"]++; });
-  $("#fbCtx").value = JSON.stringify({ scale: scaleId, tiles: n.tile, buildings: n.building, props: n.prop, theme: document.documentElement.dataset.theme,
+  const n = { tile: 0, building: 0, prop: 0, wall: 0 };
+  items.forEach(i => { const d = DEF[i.id]; n[d.kind === "tile" ? "tile" : d.prop ? "prop" : d.wall ? "wall" : "building"]++; });
+  $("#fbCtx").value = JSON.stringify({ scale: scaleId, tiles: n.tile, buildings: n.building, wallPieces: n.wall, props: n.prop, theme: document.documentElement.dataset.theme,
     screen: screen.width + "x" + screen.height, window: innerWidth + "x" + innerHeight, browser: navigator.userAgent, lastClicks: fbLog, when: new Date().toISOString() });
   $("#fbGo").disabled = true; $("#fbMsg").textContent = "Sending…";
   try {

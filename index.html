@@ -21,7 +21,7 @@
 </header>
 <main>
   <aside id="pal">
-    <div class="tabs"><button data-t="tile" class="on">Roads</button><button data-t="object">Buildings</button><button data-t="prop">Props</button></div>
+    <div class="tabs"><button data-t="tile" class="on">Roads</button><button data-t="object">Buildings</button><button data-t="prop">Props</button><button data-t="wall">Walls</button></div>
     <div class="filters"><input id="q" placeholder="Search" spellcheck="false">
       <label><input type="checkbox" id="fCore"> core only</label></div>
     <div id="palNote" class="mut" hidden>Interior props N/A for map builder</div>
@@ -65,7 +65,7 @@
 <dialog id="dView"><div class="vbar"><b>Generate view</b>
   <button id="vL" title="Look from the previous side">⟲</button><button id="vR" title="Look from the next side">⟳</button>
   <span id="vInfo" class="mut"></span><span class="sp"></span>
-  <label class="vtog"><input type="checkbox" id="vBuild" checked> buildings</label><label class="vtog"><input type="checkbox" id="vProps" checked> props</label>
+  <label class="vtog"><input type="checkbox" id="vBuild" checked> buildings</label><label class="vtog"><input type="checkbox" id="vProps" checked> props</label><label class="vtog"><input type="checkbox" id="vWalls" checked> walls</label>
   <select id="vRatio"><option>16:9</option><option>3:2</option><option>4:3</option><option>1:1</option><option>4:5</option><option>9:16</option><option>21:9</option></select>
   <select id="vLong"><option>1920</option><option selected>3840</option><option>5760</option></select>
   <button id="vSave" class="primary">Save image</button><button id="vClose">Close</button></div>

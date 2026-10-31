@@ -56,7 +56,7 @@ function orderBuildings(bs) {
 }
 
 // buildings and props can be hidden to see the roads alone; the framing still counts everything, so nothing jumps when you tick
-const visible = it => { const d = DEF[it.id]; return d.kind === "tile" || (d.prop ? $("#vProps").checked : $("#vBuild").checked); };
+const visible = it => { const d = DEF[it.id]; return d.kind === "tile" || (d.prop ? $("#vProps").checked : d.wall ? $("#vWalls").checked : $("#vBuild").checked); };
 function sceneItems() {
   const tiles = items.filter(i => DEF[i.id].kind === "tile"), V = (315 + 90 * VW.v) * Math.PI / 180, dx = Math.cos(V), dy = Math.sin(V);
   tiles.sort((a, b) => (a.x * dx + a.y * dy) - (b.x * dx + b.y * dy));

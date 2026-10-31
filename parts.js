@@ -6,24 +6,24 @@ function partsData() {
   const by = {};
   for (const it of items) { const d = DEF[it.id]; (by[it.id] = by[it.id] || { d, n: 0 }).n++; }
   const rows = Object.values(by).map(({ d, n }) => ({
-    kind: d.kind === "tile" ? "Road tile" : d.prop ? "Prop" : "Building", n, name: (d.num ? d.num + " " : "") + d.label,
+    kind: d.kind === "tile" ? "Road tile" : d.prop ? "Prop" : d.wall ? "Wall piece" : "Building", n, name: (d.num ? d.num + " " : "") + d.label,
     model: d.kind === "tile" ? "556_RoadSystem_" + d.sku : d.folder, size: d.kind === "tile" ? `${sz(d.w)} × ${sz(d.l)}` : `${sz(d.w)} × ${sz(d.l)} × ${sz(d.h)}`,
     set: d.set === "core" ? "Core set" : "Stretch goal", group: d.group, img: d.img, d,
   }));
-  const rank = r => (r.kind === "Road tile" ? 0 : r.kind === "Building" ? 1 : 2) * 100 + (r.kind === "Road tile" ? (GROUP_ORDER.indexOf(r.group) + 99) % 99 : 0);
+  const rank = r => ({ "Road tile": 0, "Building": 1, "Wall piece": 2, "Prop": 3 }[r.kind]) * 100 + (r.kind === "Road tile" ? (GROUP_ORDER.indexOf(r.group) + 99) % 99 : 0);
   rows.sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
   const bs = items.length ? items.map(aabb) : null;
   const size = bs ? [Math.max(...bs.map(b => b[2])) - Math.min(...bs.map(b => b[0])), Math.max(...bs.map(b => b[3])) - Math.min(...bs.map(b => b[1]))].map(v => Math.round(v * SK())) : [0, 0];
   const tot = k => rows.filter(r => r.kind === k).reduce((s, r) => s + r.n, 0), typ = k => rows.filter(r => r.kind === k).length;
   const goals = {};
   rows.filter(r => r.d.set === "stretch").forEach(r => { const g = r.d.goal || "stretch goal"; goals[g] = (goals[g] || 0) + r.n; });
-  return { rows, size, tiles: tot("Road tile"), tileTypes: typ("Road tile"), builds: tot("Building"), buildTypes: typ("Building"), props: tot("Prop"), propTypes: typ("Prop"), goals };
+  return { rows, size, tiles: tot("Road tile"), tileTypes: typ("Road tile"), builds: tot("Building"), buildTypes: typ("Building"), walls: tot("Wall piece"), wallTypes: typ("Wall piece"), props: tot("Prop"), propTypes: typ("Prop"), goals };
 }
 
 function partsText(P, name) {
   const L = [`${name} - parts to print`, `Map size ${P.size[0]} x ${P.size[1]} mm (${SCALES[scaleId].name} scale)`, ""];
   P.rows.forEach(r => L.push(`${r.n} x ${r.name}   [${r.kind}, ${r.size} mm, ${r.set}]`));
-  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Props: ${P.props} (${P.propTypes} types)`);
+  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`);
   return L.join("\n");
 }
 
@@ -42,7 +42,7 @@ function renderParts() {
     return head + `<tr><td class="q">${r.n}×</td><td><img src="${r.img || ""}" alt=""></td><td class="nm">${r.name}<small>${r.size} mm${r.d.set === "core" ? "" : " · " + r.set}</small></td></tr>`;
   }).join("");
   box.className = "";
-  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span></div><table>${rows}</table>`;
+  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span></div><table>${rows}</table>`;
 }
 const _updateUI = updateUI;
 updateUI = function () { _updateUI(); renderParts(); };

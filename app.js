@@ -50,7 +50,7 @@ async function init() {
 let palTab = "tile";
 function buildPalette() {
   const q = $("#q").value.toLowerCase(), core = $("#fCore").checked;
-  const defs = (palTab === "tile" ? LIB.tiles : palTab === "prop" ? LIB.objects.filter(d => d.prop) : LIB.objects.filter(d => !d.prop)).filter(d =>
+  const defs = (palTab === "tile" ? LIB.tiles : palTab === "prop" ? LIB.objects.filter(d => d.prop) : palTab === "wall" ? LIB.objects.filter(d => d.wall) : LIB.objects.filter(d => !d.prop && !d.wall)).filter(d =>
     (!q || (d.label + " " + d.sku + " " + (d.num || "")).toLowerCase().includes(q)) && (!core || d.set === "core"));
   const groups = {};
   defs.forEach(d => (groups[d.group] = groups[d.group] || []).push(d));
@@ -146,7 +146,7 @@ function onRoad(it) {
   if (hit && hit.key === key) return hit.v;
   const d = DEF[it.id]; let nRoad = 0, nHard = 0;
   const tiles = items.filter(t => DEF[t.id].kind === "tile").map(t => ({ t, b: aabb(t) }));
-  const st = d.prop ? 2 : 5;
+  const st = d.prop || d.wall ? 2 : 5;
   for (let u = -d.w / 2 + 1; u < d.w / 2; u += st) for (let v = -d.l / 2 + 1; v < d.l / 2; v += st) {
     const [rx, ry] = rot2(u, v, it.rot), wx = rx + it.x, wy = ry + it.y;
     for (const { t, b } of tiles) {
@@ -193,6 +193,31 @@ function analyse(skip) {
 let A = analyse();
 
 // ---------------------------------------------------------------- snapping
+// WALLS: a panel's tongue slides into a post's (or gate frame's) groove.  d.m = tongue sides, d.f = groove sides (piece frame, wall run along +X),
+// d.inset = how far the tongue sits inside the groove's face.  A dragged piece jumps to the nearest fitting joint and turns to fit.
+function wallPorts(d, rot) {
+  const out = [];
+  for (const [sides, type] of [[d.m || [], "M"], [d.f || [], "F"]]) for (const s of sides) {
+    const ax = s[1] === "X", sg = s[0] === "+" ? 1 : -1, [nx, ny] = rot2(ax ? sg : 0, ax ? 0 : sg, rot);
+    out.push({ type, nx, ny, half: (ax ? d.w : d.l) / 2, inset: d.inset || 2.9 });
+  }
+  return out;
+}
+function snapWall(it, wx, wy) {
+  const d = DEF[it.id]; if (!d.m && !d.f) return null;
+  const thr = Math.max(16, 30 / view.z), others = items.filter(o => o !== it && DEF[o.id].wall && (DEF[o.id].m || DEF[o.id].f));
+  let best = null;
+  for (const rot of [0, 90, 180, 270]) for (const a of wallPorts(d, rot)) for (const o of others) {
+    const od = DEF[o.id]; for (const b of wallPorts(od, o.rot)) {
+      if (a.type === b.type || Math.abs(a.nx + b.nx) > .01 || Math.abs(a.ny + b.ny) > .01) continue;          // a tongue meets a groove, facing each other
+      const inset = a.type === "F" ? a.inset : b.inset, gap = a.half + b.half - inset;
+      const x = o.x + b.nx * gap, y = o.y + b.ny * gap, dist = Math.hypot(x - wx, y - wy) + (rot === ((it.rot % 360) + 360) % 360 ? 0 : 6);
+      if (dist < thr && (!best || dist < best.dist)) best = { dist, x, y, rot };
+    }
+  }
+  if (!best) return null;
+  it.rot = best.rot; return [best.x, best.y];
+}
 function snapTile(it, wx, wy, alt) {
   const base = { ...it, x: wx, y: wy };
   if (alt) return [wx, wy];
@@ -229,10 +254,11 @@ function drawItem(c, it, a, extra) {
     else c.drawImage(IMG[d.id], -d.w / 2, -d.l / 2, d.w, d.l);
     c.strokeStyle = a.over.has(it) ? "#e5384f" : "rgba(0,0,0,.35)"; c.lineWidth = (a.over.has(it) ? 3 : 1) / view.z; c.strokeRect(-d.w / 2, -d.l / 2, d.w, d.l);
   } else {
-    const col = d.prop ? "#7fb069" : OBJ_COL[d.group] || "#999", bad = a.over.has(it) || a.road.has(it), warn = !bad && a.foot.has(it);
+    const col = d.prop ? "#7fb069" : d.wall ? "#b79a78" : OBJ_COL[d.group] || "#999", bad = a.over.has(it) || a.road.has(it), warn = !bad && a.foot.has(it);
     c.globalAlpha = extra && extra.ghost ? .7 : .93; c.fillStyle = col; c.fillRect(-d.w / 2, -d.l / 2, d.w, d.l); c.globalAlpha = 1;
     c.strokeStyle = bad ? "#e5384f" : warn ? "#e0a800" : "rgba(0,0,0,.6)"; c.lineWidth = (bad || warn ? 3 : 1.5) / view.z; c.strokeRect(-d.w / 2, -d.l / 2, d.w, d.l);
-    c.fillStyle = "rgba(0,0,0,.55)"; c.beginPath(); c.moveTo(-8, -d.l / 2); c.lineTo(8, -d.l / 2); c.lineTo(0, -d.l / 2 + 12); c.fill();   // model front (-Y)
+    const fw = d.wall ? Math.min(8, d.l * 0.45) : 8, fh = d.wall ? Math.min(12, d.l * 0.5) : 12;
+    c.fillStyle = "rgba(0,0,0,.55)"; c.beginPath(); c.moveTo(-fw, -d.l / 2); c.lineTo(fw, -d.l / 2); c.lineTo(0, -d.l / 2 + fh); c.fill();   // model front (-Y)
   }
   c.restore();
   if (d.kind === "object") {
@@ -550,7 +576,7 @@ function updateUI() {
   const tiles = items.filter(i => DEF[i.id].kind === "tile"), objs = items.filter(i => DEF[i.id].kind === "object");
   const ok = A.joins.filter(j => j.ok).length, bad = A.joins.length - ok;
   const st = {}; items.forEach(i => { const d = DEF[i.id]; if (d.set === "stretch") st[d.group] = (st[d.group] || 0) + 1; });
-  $("#stats").innerHTML = `${tiles.length} tiles · ${objs.filter(o => !DEF[o.id].prop).length} buildings · ${objs.filter(o => DEF[o.id].prop).length} props<br><span class="ok">${ok} joins OK</span> · <span class="${bad ? "bad" : "mut"}">${bad} mismatched</span><br><span class="${A.open.length ? "warn" : "mut"}">${A.open.length} open road ends</span><br>` +
+  $("#stats").innerHTML = `${tiles.length} tiles · ${objs.filter(o => !DEF[o.id].prop && !DEF[o.id].wall).length} buildings · ${objs.filter(o => DEF[o.id].wall).length} wall pieces · ${objs.filter(o => DEF[o.id].prop).length} props<br><span class="ok">${ok} joins OK</span> · <span class="${bad ? "bad" : "mut"}">${bad} mismatched</span><br><span class="${A.open.length ? "warn" : "mut"}">${A.open.length} open road ends</span><br>` +
     (A.over.size ? `<span class="bad">${A.over.size} overlapping</span><br>` : "") + (A.road.size ? `<span class="bad">${A.road.size} building(s) on the road</span><br>` : "") +
     (A.foot.size ? `<span class="warn">${A.foot.size} item(s) on the footpath or road (allowed)</span><br>` : "") +
     "";
@@ -614,11 +640,11 @@ addEventListener("pointermove", e => {
   if (drag.fromPal) {
     if (!overCanvas(e)) { ghost = null; draw(); return; }
     const d = drag.def, base = ghost && ghost.item ? ghost.item : { uid: 0, id: d.id, x: 0, y: 0, rot: 0 };
-    const [x, y] = d.kind === "tile" ? snapTile(base, wx, wy, e.altKey) : snapObj(wx, wy, e.altKey, d.prop ? 2 : 5);
+    const [x, y] = d.kind === "tile" ? snapTile(base, wx, wy, e.altKey) : (d.wall && !e.altKey && snapWall(base, wx, wy)) || snapObj(wx, wy, e.altKey, d.prop || d.wall ? 2 : 5);
     base.x = x; base.y = y; ghost = { item: base }; draw();
   } else if (drag.it) {
     const it = drag.it; drag.moved = true;
-    const [x, y] = DEF[it.id].kind === "tile" ? snapTile(it, wx - drag.dx, wy - drag.dy, e.altKey) : snapObj(wx - drag.dx, wy - drag.dy, e.altKey, DEF[it.id].prop ? 2 : 5);
+    const [x, y] = DEF[it.id].kind === "tile" ? snapTile(it, wx - drag.dx, wy - drag.dy, e.altKey) : (DEF[it.id].wall && !e.altKey && snapWall(it, wx - drag.dx, wy - drag.dy)) || snapObj(wx - drag.dx, wy - drag.dy, e.altKey, DEF[it.id].prop || DEF[it.id].wall ? 2 : 5);
     it.x = x; it.y = y; tilesRev++; A = analyse(); draw();
   }
 });
