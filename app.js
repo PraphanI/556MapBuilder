@@ -186,37 +186,59 @@ function analyse(skip) {
   }
   const objs = items.filter(i => DEF[i.id].kind === "object");
   for (let i = 0; i < objs.length; i++) for (let j = i + 1; j < objs.length; j++)
-    if (satOverlap(obb(objs[i]), obb(objs[j]))) { over.add(objs[i]); over.add(objs[j]); }
+    if (satOverlap(obbBody(objs[i]), obbBody(objs[j]))) { over.add(objs[i]); over.add(objs[j]); }
   const road = new Set(objs.filter(o => onRoad(o) === 2)), foot = new Set(objs.filter(o => onRoad(o) === 1));
-  return { joins, open, over, road, foot };
+  return { joins, open, over, road, foot, wj: wallJoints(objs) };
 }
 let A = analyse();
 
 // ---------------------------------------------------------------- snapping
 // WALLS: a panel's tongue slides into a post's (or gate frame's) groove.  d.m = tongue sides, d.f = groove sides (piece frame, wall run along +X),
 // d.inset = how far the tongue sits inside the groove's face.  A dragged piece jumps to the nearest fitting joint and turns to fit.
-function wallPorts(d, rot) {
-  const out = [];
-  for (const [sides, type] of [[d.m || [], "M"], [d.f || [], "F"]]) for (const s of sides) {
-    const ax = s[1] === "X", sg = s[0] === "+" ? 1 : -1, [nx, ny] = rot2(ax ? sg : 0, ax ? 0 : sg, rot);
-    out.push({ type, nx, ny, half: (ax ? d.w : d.l) / 2, inset: d.inset || 2.9 });
-  }
+function wallEnds(d, rot) {
+  const out = [], add = (side, type, ok) => {
+    const ax = side[1] === "X", sg = side[0] === "+" ? 1 : -1, [nx, ny] = rot2(ax ? sg : 0, ax ? 0 : sg, rot);
+    out.push({ type, ok, nx, ny, half: (ax ? d.w : d.l) / 2, inset: d.inset || 2.9 });
+  };
+  for (const s of d.m || []) add(s, "M", true);                                   // panels: a tongue at each end
+  if (d.f) for (const s of ["+X", "-X", "+Y", "-Y"]) add(s, "F", d.f.includes(s));  // posts and gates: any face can be butted against, only some have the groove
   return out;
 }
+function isWall(o) { return DEF[o.id].wall && (DEF[o.id].m || DEF[o.id].f); }
+// where the centre of piece A sits when its end a is joined to end b of piece B (a tongue goes `inset` into the groove's face)
+function wallGap(a, b) { return a.half + b.half - (a.type === "F" ? a.inset : b.inset); }
 function snapWall(it, wx, wy) {
   const d = DEF[it.id]; if (!d.m && !d.f) return null;
-  const thr = Math.max(16, 30 / view.z), others = items.filter(o => o !== it && DEF[o.id].wall && (DEF[o.id].m || DEF[o.id].f));
+  const thr = Math.max(16, 30 / view.z), others = items.filter(o => o !== it && isWall(o));
   let best = null;
-  for (const rot of [0, 90, 180, 270]) for (const a of wallPorts(d, rot)) for (const o of others) {
-    const od = DEF[o.id]; for (const b of wallPorts(od, o.rot)) {
-      if (a.type === b.type || Math.abs(a.nx + b.nx) > .01 || Math.abs(a.ny + b.ny) > .01) continue;          // a tongue meets a groove, facing each other
-      const inset = a.type === "F" ? a.inset : b.inset, gap = a.half + b.half - inset;
-      const x = o.x + b.nx * gap, y = o.y + b.ny * gap, dist = Math.hypot(x - wx, y - wy) + (rot === ((it.rot % 360) + 360) % 360 ? 0 : 6);
-      if (dist < thr && (!best || dist < best.dist)) best = { dist, x, y, rot };
-    }
+  for (const rot of [0, 90, 180, 270]) for (const a of wallEnds(d, rot)) for (const o of others) for (const b of wallEnds(DEF[o.id], o.rot)) {
+    if (a.type === b.type || Math.abs(a.nx + b.nx) > .01 || Math.abs(a.ny + b.ny) > .01) continue;      // a tongue end against a post or gate face, facing each other
+    const ok = a.type === "F" ? a.ok : b.ok, gap = wallGap(a, b), x = o.x + b.nx * gap, y = o.y + b.ny * gap;
+    const raw = Math.hypot(x - wx, y - wy), score = raw + (rot === ((it.rot % 360) + 360) % 360 ? 0 : 6) + (ok ? 0 : 8);   // a fitting joint wins over a wrong side when both are in reach
+    if (raw < thr && (!best || score < best.score)) best = { score, x, y, rot };
   }
   if (!best) return null;
   it.rot = best.rot; return [best.x, best.y];
+}
+// the wall joints of a list of pieces: where a tongue end sits in a post's or gate's face, and whether that face has the groove
+function wallJoints(list) {
+  const ws = list.filter(isWall), out = [];
+  for (let i = 0; i < ws.length; i++) for (let j = 0; j < ws.length; j++) {
+    if (i === j) continue;
+    const A = ws[i], B = ws[j];
+    for (const a of wallEnds(DEF[A.id], A.rot)) if (a.type === "M") for (const b of wallEnds(DEF[B.id], B.rot)) {
+      if (b.type !== "F" || Math.abs(a.nx + b.nx) > .01 || Math.abs(a.ny + b.ny) > .01) continue;
+      const gap = wallGap(a, b);
+      if (Math.hypot(A.x - (B.x + b.nx * gap), A.y - (B.y + b.ny * gap)) < 1.2) out.push({ x: B.x + b.nx * b.half, y: B.y + b.ny * b.half, ok: b.ok, a: A, b: B });
+    }
+  }
+  return out;
+}
+// footprint used for the overlap test: a panel's tongues are meant to sit inside the post, so only its body counts
+function obbBody(it) {
+  const d = DEF[it.id]; if (!d.m) return obb(it);
+  const hw = d.w / 2 - (d.inset || 2.9), hl = d.l / 2;
+  return [[-hw, -hl], [hw, -hl], [hw, hl], [-hw, hl]].map(([x, y]) => { const [p, q] = rot2(x, y, it.rot); return [p + it.x, q + it.y]; });
 }
 function snapTile(it, wx, wy, alt) {
   const base = { ...it, x: wx, y: wy };
@@ -257,12 +279,20 @@ function drawItem(c, it, a, extra) {
     const col = d.prop ? "#7fb069" : d.wall ? "#b79a78" : OBJ_COL[d.group] || "#999", bad = a.over.has(it) || a.road.has(it), warn = !bad && a.foot.has(it);
     c.globalAlpha = extra && extra.ghost ? .7 : .93; c.fillStyle = col; c.fillRect(-d.w / 2, -d.l / 2, d.w, d.l); c.globalAlpha = 1;
     c.strokeStyle = bad ? "#e5384f" : warn ? "#e0a800" : "rgba(0,0,0,.6)"; c.lineWidth = (bad || warn ? 3 : 1.5) / view.z; c.strokeRect(-d.w / 2, -d.l / 2, d.w, d.l);
-    const fw = d.wall ? Math.min(8, d.l * 0.45) : 8, fh = d.wall ? Math.min(12, d.l * 0.5) : 12;
-    c.fillStyle = "rgba(0,0,0,.55)"; c.beginPath(); c.moveTo(-fw, -d.l / 2); c.lineTo(fw, -d.l / 2); c.lineTo(0, -d.l / 2 + fh); c.fill();   // model front (-Y)
+    if (!d.wall) {
+      c.fillStyle = "rgba(0,0,0,.55)"; c.beginPath(); c.moveTo(-8, -d.l / 2); c.lineTo(8, -d.l / 2); c.lineTo(0, -d.l / 2 + 12); c.fill();   // model front (-Y)
+    } else if (d.f) {                                                // wall pieces have no front; a post or gate shows where its GROOVES are (drawing frame is mirrored in y)
+      c.fillStyle = "#1d1d22"; c.strokeStyle = "#fff"; c.lineWidth = 0.8 / view.z;
+      for (const sd of d.f) {
+        const ax = sd[1] === "X", sg = sd[0] === "+" ? 1 : -1, dp = Math.min(3.6, (ax ? d.w : d.l) * 0.3), wd = Math.min(6, (ax ? d.l : d.w) * 0.5);
+        const x0 = ax ? (sg > 0 ? d.w / 2 - dp : -d.w / 2) : -wd / 2, y0 = ax ? -wd / 2 : (sg > 0 ? -d.l / 2 : d.l / 2 - dp);
+        c.fillRect(x0, y0, ax ? dp : wd, ax ? wd : dp); c.strokeRect(x0, y0, ax ? dp : wd, ax ? wd : dp);
+      }
+    }
   }
   c.restore();
   if (d.kind === "object") {
-    if (d.w * view.z < 20) { c.restore(); return; }                  // too small on screen to carry a label
+    if (d.w * view.z < 20 || d.wall) { c.restore(); return; }                       // too small on screen to carry a label (wall pieces are thin: no label)                  // too small on screen to carry a label
     c.rotate(-rad(it.rot)); c.scale(1, -1);
     c.fillStyle = "#111"; c.textAlign = "center";
     const fits = (txt) => c.measureText(txt).width * view.z < d.w * view.z - 6 && c.measureText(txt).width * view.z < d.l * view.z * 3;   // only words that fit inside the box
@@ -299,6 +329,10 @@ function render(c, W, H, v, opt = {}) {
     c.setLineDash([]);
   }
   for (const it of all) if (DEF[it.id].kind === "object") drawItem(c, it, A, { ghost: it === (ghost && ghost.item) });
+  if (!opt.plain) for (const j of (ghost && ghost.item && DEF[ghost.item.id].wall ? wallJoints([...items, ghost.item]) : A.wj)) {      // wall joints: green = groove faces the tongue, red = wrong side
+    const r = Math.max(3.2, 6 / v.z); c.beginPath(); c.arc(j.x, j.y, r, 0, 7); c.fillStyle = j.ok ? "#1a9d55" : "#e5384f"; c.fill(); c.lineWidth = 1.5 / v.z; c.strokeStyle = "#fff"; c.stroke();
+    if (!j.ok) { c.beginPath(); c.moveTo(j.x - r * .5, j.y - r * .5); c.lineTo(j.x + r * .5, j.y + r * .5); c.moveTo(j.x - r * .5, j.y + r * .5); c.lineTo(j.x + r * .5, j.y - r * .5); c.stroke(); }
+  }
   if (!opt.plain && sel) {
     const d = DEF[sel.id]; c.save(); c.translate(sel.x, sel.y); c.rotate(rad(sel.rot)); c.strokeStyle = "#6c4cff"; c.lineWidth = 3 / v.z; c.setLineDash([8 / v.z, 5 / v.z]);
     c.strokeRect(-d.w / 2 - 3, -d.l / 2 - 3, d.w + 6, d.l + 6); c.restore();
@@ -579,6 +613,7 @@ function updateUI() {
   $("#stats").innerHTML = `${tiles.length} tiles · ${objs.filter(o => !DEF[o.id].prop && !DEF[o.id].wall).length} buildings · ${objs.filter(o => DEF[o.id].wall).length} wall pieces · ${objs.filter(o => DEF[o.id].prop).length} props<br><span class="ok">${ok} joins OK</span> · <span class="${bad ? "bad" : "mut"}">${bad} mismatched</span><br><span class="${A.open.length ? "warn" : "mut"}">${A.open.length} open road ends</span><br>` +
     (A.over.size ? `<span class="bad">${A.over.size} overlapping</span><br>` : "") + (A.road.size ? `<span class="bad">${A.road.size} building(s) on the road</span><br>` : "") +
     (A.foot.size ? `<span class="warn">${A.foot.size} item(s) on the footpath or road (allowed)</span><br>` : "") +
+    (A.wj.filter(j => j.ok).length ? `<span class="ok">${A.wj.filter(j => j.ok).length} wall joint(s) fit</span><br>` : "") + (A.wj.filter(j => !j.ok).length ? `<span class="bad">${A.wj.filter(j => !j.ok).length} wall joint(s) on the wrong side: the groove is not facing the tongue</span><br>` : "") +
     "";
   $("#status").innerHTML = `${bad ? `<span class="bad">${bad} mismatch</span> · ` : ""}${A.open.length ? `<span class="warn">${A.open.length} open</span> · ` : ""}<span class="ok">${ok} joined</span>${dirty ? " · unsaved" : ""}`;
   const b = $("#inspBody");
