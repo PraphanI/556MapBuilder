@@ -2,6 +2,7 @@
 // World units are model millimetres (1:56), y up like Blender. Item x,y = footprint CENTRE, rot = degrees CCW.
 // WEB = the Netlify copy: no server, no Blender. Maps save to / open from the user's own computer (see "web build" below).
 const WEB = !!window.WEB || /[?&]web=1/.test(location.search);
+const WEB_WALLS = false;      // the online copy leaves the Walls tab out until the revised Modular Walls are in (set true to bring it back)
 const BUST = () => WEB ? "" : "?t=" + Date.now();
 const $ = s => document.querySelector(s);
 const cv = $("#cv"), ctx = cv.getContext("2d");
@@ -28,6 +29,7 @@ const OBJ_COL = { "Residential Building": "#e0b84a", "Commercial Building": "#4a
 // ---------------------------------------------------------------- library
 async function loadLib() {
   LIB = await (await fetch("library.json" + BUST())).json();
+  if (WEB && !WEB_WALLS) LIB.objects = LIB.objects.filter(d => !d.wall);
   DEF = {}; IMG = {}; PLAN = {};
   for (const k in clsCache) delete clsCache[k];
   for (const d of [...LIB.tiles, ...LIB.objects]) {
@@ -40,6 +42,7 @@ async function init() {
   await loadLib();
   buildPalette();
   const qp = new URLSearchParams(location.search).get("open");              // ?open=<layout path> opens that layout instead of the saved draft
+  if (WEB && !WEB_WALLS) { document.querySelector('.tabs button[data-t="wall"]').hidden = true; const vw = $("#vWalls"); if (vw) { vw.checked = false; vw.closest("label").hidden = true; } }
   if (WEB) { $("#bRender").hidden = true; $("#bRefresh").hidden = true; $("#bFeed").hidden = false; }
   if (qp && !WEB) { try { const o = await (await fetch("/api/open?path=" + encodeURIComponent(qp))).json(); if (!o.error) { load(o, qp); fit(); resize(); return; } } catch (e) {} }
   try { const s = localStorage.getItem("mb_draft"); if (s) { const o = JSON.parse(s); const wasDirty = !!o.dirty; load(o, o.filePath || null); dirty = wasDirty; fileLabel(); } } catch (e) {}
@@ -47,10 +50,10 @@ async function init() {
   if (!WEB) try { const j = localStorage.getItem("mb_job"); if (j) watchJob(j, true); } catch (e) {}
 }
 
-let palTab = "tile";
+let palTab = "plain";                                   // first tab: the plain ground tiles; "tile" = the road tiles
 function buildPalette() {
   const q = $("#q").value.toLowerCase(), core = $("#fCore").checked;
-  const defs = (palTab === "tile" ? LIB.tiles : palTab === "prop" ? LIB.objects.filter(d => d.prop) : palTab === "wall" ? LIB.objects.filter(d => d.wall) : LIB.objects.filter(d => !d.prop && !d.wall)).filter(d =>
+  const defs = (palTab === "plain" ? LIB.tiles.filter(d => d.group === "Plain ground") : palTab === "tile" ? LIB.tiles.filter(d => d.group !== "Plain ground") : palTab === "prop" ? LIB.objects.filter(d => d.prop) : palTab === "wall" ? LIB.objects.filter(d => d.wall) : LIB.objects.filter(d => !d.prop && !d.wall)).filter(d =>
     (!q || (d.label + " " + d.sku + " " + (d.num || "")).toLowerCase().includes(q)) && (!core || d.set === "core"));
   const groups = {};
   defs.forEach(d => (groups[d.group] = groups[d.group] || []).push(d));
