@@ -2,6 +2,36 @@
 // PARTS LIST: what a player has to print for the map on screen. Counts every tile, building and prop by type.
 const GROUP_ORDER = ["Street", "Offset street", "Median", "Roundabout", "Plain ground", "One-lane", "Alley", "Transition", "Parking"];
 
+// OPENLOCK CLIPS: every tile has sockets on all four faces (the plain tiles carry the road tile's sockets): a 160 mm face has 3, at 25.4 / half / 25.4 from the far end;
+// a shorter face has 2, at 25.4 from each end; the parking lot's entrance face has one more (54.6, or 105.4 on the mirrored lot).
+// One clip joins one socket in each of two tiles, so the count = the pairs of sockets from different tiles that sit on the same map point and face each other.
+// Mixed sizes and offsets are handled by position alone (two halves against a full tile share only 2 aligned sockets, not 3).
+function clipCount() {
+  const END = 25.4, pts = [];
+  for (const it of items) {
+    const d = DEF[it.id]; if (!d || d.kind !== "tile") continue;
+    for (const [face, n, nx, ny] of [["Y0", d.w, 0, -1], ["Y1", d.w, 0, 1], ["X0", d.l, -1, 0], ["X1", d.l, 1, 0]]) {
+      let pos = n >= 160 - 1e-9 ? [END, n / 2, n - END] : [END, n - END];
+      if (face === "Y0" && it.id === "parking") pos = [...pos, 54.6];
+      if (face === "Y0" && it.id === "parkingR") pos = [...pos, 105.4];
+      for (const q of pos) {
+        const [lx, ly] = ny ? [-d.w / 2 + q, ny * d.l / 2] : [nx * d.w / 2, -d.l / 2 + q];
+        const [wx, wy] = rot2(lx, ly, it.rot), [ox, oy] = rot2(nx, ny, it.rot);
+        pts.push({ x: it.x + wx, y: it.y + wy, nx: Math.round(ox), ny: Math.round(oy), uid: it.uid });
+      }
+    }
+  }
+  const grid = new Map(), key = (x, y) => Math.round(x / 3) + "," + Math.round(y / 3);
+  pts.forEach(t => { const k = key(t.x, t.y); (grid.get(k) || grid.set(k, []).get(k)).push(t); });
+  let n = 0;
+  for (const a of pts) for (let gx = -1; gx <= 1; gx++) for (let gy = -1; gy <= 1; gy++) {
+    for (const b of grid.get(key(a.x + gx * 3, a.y + gy * 3)) || []) {
+      if (b.uid > a.uid && Math.abs(a.x - b.x) < 1.5 && Math.abs(a.y - b.y) < 1.5 && a.nx === -b.nx && a.ny === -b.ny) n++;
+    }
+  }
+  return n;
+}
+
 function partsData() {
   const by = {};
   for (const it of items) { const d = DEF[it.id]; (by[it.id] = by[it.id] || { d, n: 0 }).n++; }
@@ -17,19 +47,20 @@ function partsData() {
   const tot = k => rows.filter(r => r.kind === k).reduce((s, r) => s + r.n, 0), typ = k => rows.filter(r => r.kind === k).length;
   const goals = {};
   rows.filter(r => r.d.set === "stretch").forEach(r => { const g = r.d.goal || "stretch goal"; goals[g] = (goals[g] || 0) + r.n; });
-  return { rows, size, tiles: tot("Road tile"), tileTypes: typ("Road tile"), builds: tot("Building"), buildTypes: typ("Building"), walls: tot("Wall piece"), wallTypes: typ("Wall piece"), props: tot("Prop"), propTypes: typ("Prop"), goals };
+  const clips = clipCount();
+  return { clips, rows, size, tiles: tot("Road tile"), tileTypes: typ("Road tile"), builds: tot("Building"), buildTypes: typ("Building"), walls: tot("Wall piece"), wallTypes: typ("Wall piece"), props: tot("Prop"), propTypes: typ("Prop"), goals };
 }
 
 function partsText(P, name) {
   const L = [`${name} - parts to print`, `Map size ${P.size[0]} x ${P.size[1]} mm (${SCALES[scaleId].name} scale)`, ""];
   P.rows.forEach(r => L.push(`${r.n} x ${r.name}   [${r.kind}, ${r.size} mm, ${r.set}]`));
-  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`);
+  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`, `OpenLOCK clips needed to join the tiles: ${P.clips} (not included in the pack; sockets only)`);
   return L.join("\n");
 }
 
 function partsCsv(P) {
   const q = v => '"' + String(v).replace(/"/g, '""') + '"';
-  return ["Qty,Type,Name,Model,Size mm,Set"].concat(P.rows.map(r => [r.n, r.kind, r.name, r.model, r.size, r.set].map(q).join(","))).join("\r\n");
+  return ["Qty,Type,Name,Model,Size mm,Set"].concat(P.rows.map(r => [r.n, r.kind, r.name, r.model, r.size, r.set].map(q).join(",")), [[P.clips, "Connector", "OpenLOCK clip (needed to join the tiles; not included in the pack)", "", "", ""].map(q).join(",")]).join("\r\n");
 }
 
 // the live list in the right-hand pane: rebuilt whenever the map changes; collapsible, open by default
@@ -42,7 +73,7 @@ function renderParts() {
     return head + `<tr><td class="q">${r.n}×</td><td><img src="${r.img || ""}" alt=""></td><td class="nm">${r.name}<small>${r.size} mm${r.d.set === "core" ? "" : " · " + r.set}</small></td></tr>`;
   }).join("");
   box.className = "";
-  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span></div><table>${rows}</table>`;
+  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span><br><b>${P.clips}</b> OpenLOCK clips needed <span class="mut">(sold separately)</span></div><table>${rows}</table>`;
 }
 const _updateUI = updateUI;
 updateUI = function () { _updateUI(); renderParts(); };
