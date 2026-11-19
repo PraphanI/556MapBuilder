@@ -4,9 +4,10 @@ const GROUP_ORDER = ["Street", "Offset street", "Median", "Roundabout", "Plain g
 
 // OPENLOCK CLIPS (the MINIMUM to hold the map together): every tile has sockets on all four faces (the plain tiles carry the road tile's sockets): a 160 mm face has 3, at 25.4 / half / 25.4
 // from the far end; a shorter face has 2, at 25.4 from each end; the parking lot's entrance face has one more (54.6, or 105.4 on the mirrored lot).
-// Two tiles can be clipped when at least one socket of each sits on the same map point facing the other (so two halves against a full tile share only 2 aligned sockets, not 3).
-// Which tiles end up clippable depends on the order a player builds in (a tile slid into a corner can only be clipped on the side it slides in through), so the number shown is the
-// order-free minimum: one clip for every tile that joins its group (a connected group of n tiles needs n - 1). More clips make the map sturdier.
+// One clip joins one socket in each of two tiles. Two tiles that meet get one clip per socket pair that sits on the same map point facing the other
+// (two full tiles: 3; two halves against a full tile share only 2 aligned sockets, not 3).
+// When tiles close a loop (an L filled into a rectangle) only some of the joints can be clipped, and which ones depends on the order the player builds in. So the number shown is the
+// minimum that holds everything together: the joints of a minimum spanning forest, each at its full clip count (a connected group of n tiles has n - 1 joints). More clips make it sturdier.
 function clipCount() {
   const END = 25.4, pts = [];
   for (const it of items) {
@@ -24,15 +25,20 @@ function clipCount() {
   }
   const grid = new Map(), key = (x, y) => Math.round(x / 3) + "," + Math.round(y / 3);
   pts.forEach(t => { const k = key(t.x, t.y); (grid.get(k) || grid.set(k, []).get(k)).push(t); });
-  const par = new Map(), find = u => { while (par.get(u) !== u) { par.set(u, par.get(par.get(u))); u = par.get(u); } return u; };
-  pts.forEach(t => par.set(t.uid, t.uid));
-  let groups = par.size;
+  const pair = new Map();                                                      // "uidA,uidB" -> aligned socket pairs between those two tiles
   for (const a of pts) for (let gx = -1; gx <= 1; gx++) for (let gy = -1; gy <= 1; gy++) {
     for (const b of grid.get(key(a.x + gx * 3, a.y + gy * 3)) || []) {
-      if (b.uid > a.uid && Math.abs(a.x - b.x) < 1.5 && Math.abs(a.y - b.y) < 1.5 && a.nx === -b.nx && a.ny === -b.ny) { const ra = find(a.uid), rb = find(b.uid); if (ra !== rb) { par.set(ra, rb); groups--; } }
+      if (b.uid > a.uid && Math.abs(a.x - b.x) < 1.5 && Math.abs(a.y - b.y) < 1.5 && a.nx === -b.nx && a.ny === -b.ny) { const k = a.uid + "," + b.uid; pair.set(k, (pair.get(k) || 0) + 1); }
     }
   }
-  return par.size - groups;
+  const par = new Map(), find = u => { while (par.get(u) !== u) { par.set(u, par.get(par.get(u))); u = par.get(u); } return u; };
+  pts.forEach(t => par.set(t.uid, t.uid));
+  let n = 0;
+  for (const [k, c] of [...pair.entries()].sort((x, y) => x[1] - y[1])) {      // fewest clips first: the minimum forest
+    const [u, v] = k.split(",").map(Number), ru = find(u), rv = find(v);
+    if (ru !== rv) { par.set(ru, rv); n += c; }
+  }
+  return n;
 }
 
 function partsData() {
@@ -57,7 +63,7 @@ function partsData() {
 function partsText(P, name) {
   const L = [`${name} - parts to print`, `Map size ${P.size[0]} x ${P.size[1]} mm (${SCALES[scaleId].name} scale)`, ""];
   P.rows.forEach(r => L.push(`${r.n} x ${r.name}   [${r.kind}, ${r.size} mm, ${r.set}]`));
-  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`, `Minimum OpenLOCK clips to hold the tiles together: ${P.clips} (one per tile joined to its group; more clips make it sturdier; clips are not included in the pack)`);
+  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`, `Minimum OpenLOCK clips to hold the tiles together: ${P.clips} (each joint at its full clip count, loops left out; more clips make it sturdier; clips are not included in the pack)`);
   return L.join("\n");
 }
 
