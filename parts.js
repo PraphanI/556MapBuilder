@@ -82,7 +82,7 @@ function renderParts() {
     return head + `<tr><td class="q">${r.n}×</td><td><img src="${r.img || ""}" alt=""></td><td class="nm">${r.name}<small>${r.size} mm${r.d.set === "core" ? "" : " · " + r.set}</small></td></tr>`;
   }).join("");
   box.className = "";
-  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span><br><b>${P.clips}</b> OpenLOCK clips minimum <span class="mut">(sold separately)</span></div><table>${rows}</table>`;
+  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span><br><b>${P.clips}</b> OpenLOCK clips minimum</div><table>${rows}</table>`;
 }
 const _updateUI = updateUI;
 updateUI = function () { _updateUI(); renderParts(); };
