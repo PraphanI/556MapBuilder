@@ -2,10 +2,11 @@
 // PARTS LIST: what a player has to print for the map on screen. Counts every tile, building and prop by type.
 const GROUP_ORDER = ["Street", "Offset street", "Median", "Roundabout", "Plain ground", "One-lane", "Alley", "Transition", "Parking"];
 
-// OPENLOCK CLIPS: every tile has sockets on all four faces (the plain tiles carry the road tile's sockets): a 160 mm face has 3, at 25.4 / half / 25.4 from the far end;
-// a shorter face has 2, at 25.4 from each end; the parking lot's entrance face has one more (54.6, or 105.4 on the mirrored lot).
-// One clip joins one socket in each of two tiles, so the count = the pairs of sockets from different tiles that sit on the same map point and face each other.
-// Mixed sizes and offsets are handled by position alone (two halves against a full tile share only 2 aligned sockets, not 3).
+// OPENLOCK CLIPS (the MINIMUM to hold the map together): every tile has sockets on all four faces (the plain tiles carry the road tile's sockets): a 160 mm face has 3, at 25.4 / half / 25.4
+// from the far end; a shorter face has 2, at 25.4 from each end; the parking lot's entrance face has one more (54.6, or 105.4 on the mirrored lot).
+// Two tiles can be clipped when at least one socket of each sits on the same map point facing the other (so two halves against a full tile share only 2 aligned sockets, not 3).
+// Which tiles end up clippable depends on the order a player builds in (a tile slid into a corner can only be clipped on the side it slides in through), so the number shown is the
+// order-free minimum: one clip for every tile that joins its group (a connected group of n tiles needs n - 1). More clips make the map sturdier.
 function clipCount() {
   const END = 25.4, pts = [];
   for (const it of items) {
@@ -23,13 +24,15 @@ function clipCount() {
   }
   const grid = new Map(), key = (x, y) => Math.round(x / 3) + "," + Math.round(y / 3);
   pts.forEach(t => { const k = key(t.x, t.y); (grid.get(k) || grid.set(k, []).get(k)).push(t); });
-  let n = 0;
+  const par = new Map(), find = u => { while (par.get(u) !== u) { par.set(u, par.get(par.get(u))); u = par.get(u); } return u; };
+  pts.forEach(t => par.set(t.uid, t.uid));
+  let groups = par.size;
   for (const a of pts) for (let gx = -1; gx <= 1; gx++) for (let gy = -1; gy <= 1; gy++) {
     for (const b of grid.get(key(a.x + gx * 3, a.y + gy * 3)) || []) {
-      if (b.uid > a.uid && Math.abs(a.x - b.x) < 1.5 && Math.abs(a.y - b.y) < 1.5 && a.nx === -b.nx && a.ny === -b.ny) n++;
+      if (b.uid > a.uid && Math.abs(a.x - b.x) < 1.5 && Math.abs(a.y - b.y) < 1.5 && a.nx === -b.nx && a.ny === -b.ny) { const ra = find(a.uid), rb = find(b.uid); if (ra !== rb) { par.set(ra, rb); groups--; } }
     }
   }
-  return n;
+  return par.size - groups;
 }
 
 function partsData() {
@@ -54,13 +57,13 @@ function partsData() {
 function partsText(P, name) {
   const L = [`${name} - parts to print`, `Map size ${P.size[0]} x ${P.size[1]} mm (${SCALES[scaleId].name} scale)`, ""];
   P.rows.forEach(r => L.push(`${r.n} x ${r.name}   [${r.kind}, ${r.size} mm, ${r.set}]`));
-  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`, `OpenLOCK clips needed to join the tiles: ${P.clips} (not included in the pack; sockets only)`);
+  L.push("", `Road tiles: ${P.tiles} (${P.tileTypes} types) | Buildings: ${P.builds} (${P.buildTypes} types) | Wall pieces: ${P.walls} (${P.wallTypes} types) | Props: ${P.props} (${P.propTypes} types)`, `Minimum OpenLOCK clips to hold the tiles together: ${P.clips} (one per tile joined to its group; more clips make it sturdier; clips are not included in the pack)`);
   return L.join("\n");
 }
 
 function partsCsv(P) {
   const q = v => '"' + String(v).replace(/"/g, '""') + '"';
-  return ["Qty,Type,Name,Model,Size mm,Set"].concat(P.rows.map(r => [r.n, r.kind, r.name, r.model, r.size, r.set].map(q).join(",")), [[P.clips, "Connector", "OpenLOCK clip (needed to join the tiles; not included in the pack)", "", "", ""].map(q).join(",")]).join("\r\n");
+  return ["Qty,Type,Name,Model,Size mm,Set"].concat(P.rows.map(r => [r.n, r.kind, r.name, r.model, r.size, r.set].map(q).join(",")), [[P.clips, "Connector", "OpenLOCK clip (minimum to hold the tiles together; not included in the pack)", "", "", ""].map(q).join(",")]).join("\r\n");
 }
 
 // the live list in the right-hand pane: rebuilt whenever the map changes; collapsible, open by default
@@ -73,7 +76,7 @@ function renderParts() {
     return head + `<tr><td class="q">${r.n}×</td><td><img src="${r.img || ""}" alt=""></td><td class="nm">${r.name}<small>${r.size} mm${r.d.set === "core" ? "" : " · " + r.set}</small></td></tr>`;
   }).join("");
   box.className = "";
-  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span><br><b>${P.clips}</b> OpenLOCK clips needed <span class="mut">(sold separately)</span></div><table>${rows}</table>`;
+  box.innerHTML = `<div class="sum"><b>${P.tiles}</b> tiles (${P.tileTypes} types) · <b>${P.builds}</b> buildings · <b>${P.walls}</b> wall pieces · <b>${P.props}</b> props<br><span class="mut">Map ${P.size[0]} × ${P.size[1]} mm</span><br><b>${P.clips}</b> OpenLOCK clips minimum <span class="mut">(sold separately)</span></div><table>${rows}</table>`;
 }
 const _updateUI = updateUI;
 updateUI = function () { _updateUI(); renderParts(); };
